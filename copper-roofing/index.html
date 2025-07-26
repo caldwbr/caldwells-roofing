@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Copper Roofing – Caldwell's Roofing</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("header-placeholder").innerHTML = html;
+      });
+  </script>
+
+  <div class="hero-image" style="background-image: url('../images/historicVermontBlend.png');"></div>
+
+    <main>
+      <section>
+        <h1>Copper Roofing</h1>
+        <p>Copper has been used for centuries, and is a product that can last 100-300 years (often installed on cathedral roofs). Once again, there are many varieties: panel copper (like standing seam, either with added cap or with single- or double-lock using dead-blow hammers and special anvils/tools), copper shingles, and copper flat-lock.</p>
+        <p>Copper can be quite pricey, and for this reason, it is often used simply for aesthetic accents, such as on dormer roofs. Copper, like regular metal, can be formed into swoops and barrels, using a shrinker and stretcher on the vertical ribs.</p>
+      </section>
+    <h2>Example Gallery</h2>
+    <div class="grid-container gallery">
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="../videos/cuFlatLock.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Installing Flat-Lock Copper on GWC Museum in Tuskegee</figcaption>
+      </figure>
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="../videos/copperBarrelDLock.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Copper Hand-Hammered Double Lock Technique</figcaption>
+      </figure>
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="../videos/magnetDrop.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Eddy Current Magnet Resistance of Copper</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/copperSwoop.jpg" alt="Copper Swoop Roof in Auburn AL">
+        <figcaption>Copper Swoop Roof in Cary Woods Subdivision Auburn</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/cu1.jpg" alt="Copper Swoop and Hip Roof">
+        <figcaption>Copper Swoop/Hip Roof with Gutters/Downspouts</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/cu2.jpg" alt="Copper Swoop and Hip Roof with Copper Gutter and Downspout behind Tigertown Opelika al">
+        <figcaption>Copper Roof Behind Tiger Town</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/cu3.jpg" alt="Copper Swoop and Hip Roof">
+        <figcaption>Copper Roof</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/cu4.jpg" alt="Copper Swoop and Hip Roof with Copper Gutter and Downspout behind Tigertown Opelika al">
+        <figcaption>Copper Roof on Office Building</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/cu5.jpg" alt="Copper Swoop and Hip Roof">
+        <figcaption>Copper Roof</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Caldwell's Roofing | Auburn, AL | License #24152
+  </footer>
+</body>
+</html>
+
+

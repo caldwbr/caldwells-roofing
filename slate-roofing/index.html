@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slate Roofing – Caldwell's Roofing</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("header-placeholder").innerHTML = html;
+      });
+  </script>
+
+  <div class="hero-image" style="background-image: url('../images/historicVermontBlend.png');"></div>
+    <p>   Product Example Image of Historic Vermont Blend from <a href="https://vermontslateco.com/slate/historic-vermont-blend/">Vermont Slate Co.</a></p>
+
+    <main>
+      <section>
+        <h1>Slate Roofing</h1>
+        <p>There are two main options available: real (stone) and synthetic (plastic).</p>
+        <h2>1. Real Slate</h2>
+        <p>In Auburn and a lot of places, slate is not sourced from a good quarry. What this means is, a product that could last 100-150 years and look great, ends up falling apart in 1-5 years (this is also dangerous, as it creates falling tiles). Slate quarries in Vermont, Pennsylvania, New York, Canada, and some in Europe have the kind of slate that lasts forever. Imports from Asia often fall apart in a few years. If your supplier can't tell you what quarry the product came from, assume it is crappy quality.</p>
+        <p>In an ideal setting, framers should anticipate the installation of slate and use solid 2x6 decking in lieu of 1/2" OSB or CDX, as slate needs a solid base to support it without flex and without the give of oriented strand board popping nails or introducing microfractures in the slate right from the install. It is also recommended *not* to use ice and water sheild, but rather felt or synthetic, as the underlayment, to make replacement of a bad tile easier in the future (so the slates don't get glued in).</p>
+
+      </section>
+
+      <section>
+        <h2>2. Synthetic Slate</h2>
+        <p>Once again, architects, designers, and influencers tend to push synthetic over real slate even when it consistently underperforms the real thing. Despite manufacturers promising and even swearing their product won't cup upwards with time, it often seems to happen. If you're going to spend this much money, why not get the real thing? You'll have peace of mind that it will be low- to zero-maintenance for decades when installed correctly with properly-sourced tiles.</p>
+        <p>What synthetic has going for it, if you can stomach the potential for cupping, is its light weight and lack of requirement for trained labor. Real slate and copper are an entire trade to themselves, with special tools, and requiring professional know-how.</p>
+
+        <p><strong>Get a free, no-pressure inspection and quote → <a href="tel:3343327799">334-332-7799</a></strong></p>
+      </section>
+            <h2>Example Gallery</h2>
+    <div class="grid-container gallery">
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="../videos/bradSlateTrim.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Brad Getting Training at 2018 Slate Roofing Contractors Association Expo</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/slateMock.jpg" alt="Slate Mock Up">
+        <figcaption>Slate Mock-Up at Convention</figcaption>
+      </figure>
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="../videos/slateRepairS.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Brad Demonstrates Repair of a Slate Tile</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/synSlate1.jpg" alt="Synthetic Slate">
+        <figcaption>Synthetic Slate Bundle</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/synSlate2.jpg" alt="Bundle of Synthetic Slate">
+        <figcaption>Synthetic Slate Imitates Real Slate</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/syntheticSlate.jpg" alt="Home with Synthetic Slate">
+        <figcaption>Whole House with Synthetic Slate</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Caldwell's Roofing | Auburn, AL | License #24152
+  </footer>
+</body>
+</html>
+
+
