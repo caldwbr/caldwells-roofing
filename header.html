@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+  <div class="top-bar">
+    <div>📞 <a href="tel:3343327799">334-332-7799</a></div>
+    <div>✉️ <a href="mailto:caldwbr@gmail.com">caldwbr@gmail.com</a></div>
+  </div>
+  <header>
+    <a href="/">
+      <img src="/images/logo.jpg" alt="Caldwell's Roofing Logo" class="logo" />
+    </a>
+    <nav>
+      <ul>
+        <li><a href="/gaf-shingle-roofing/">GAF Shingle Roofing &#x25BE;</a>
+          <ul>
+            <li><a href="/gaf-shingle-roofing/gaf-timberline-hdz-dimensional-shingle-reroof/">Timberline HDZ</a></li>
+            <li><a href="/gaf-shingle-roofing/gaf-royal-sovereign-3-tab-shingle-roofing/">Royal Sovereign 3-tab</a></li>
+          </ul>
+        </li>
+        <li><a href="/metal-roofing/">Metal &#x25BE;</a>
+          <ul>
+            <li><a href="/metal-roofing/standing-seam-metal-roofing/">Standing Seam</a></li>
+            <li><a href="/metal-roofing/classic-rib-metal-roofing/">Classic Rib</a></li>
+          </ul>
+        </li>
+        <li><a href="/flat-roofing/">Flat &#x25BE;</a>
+          <ul>
+            <li><a href="/flat-roofing/pvc-membrane-flat-roofing/">PVC</a></li>
+            <li><a href="/flat-roofing/tpo-membrane-flat-roofing/">TPO</a></li>
+          </ul>
+        </li>
+        <li><a href="/slate-roofing/">Slate &#x25BE;</a>
+          <ul>
+            <li><a href="/slate-roofing/real-slate-roofing/">Real</a></li>
+            <li><a href="/slate-roofing/synthetic-slate-roofing/">Synthetic</a></li>
+          </ul>
+        </li>
+        <li><a href="/copper-roofing/">Copper</a>
+        <li><a href="/caldwells-roofing-posts/">Blog &#x25BE;</a>
+          <ul>
+            <li><a href="/2025/05/08/installing-flat-lock-copper-on-carver-museum-porches/">Flat Lock Copper on GWC Museum</a></li>
+            <li><a href="/2025/03/21/reroofing-the-paul-rudolph-applebee-home-with-ib-pvc/">IB PVC on Rudolph's Applebee Home</a></li>
+            <li><a href="/2025/03/21/roof-coatings/">Roof Coatings</a></li>
+            <li><a href="/2024/01/29/slate-roofing-training-from-the-srca/">Slate Training SRCA</a></li>
+            <li><a href="/2024/01/29/calibrate-and-maintain-a-roofing-brake/">Brake Maintenance SRCA</a></li>
+            <li><a href="/2024/01/28/how-to-measure-for-a-reroof/">Measuring a Reroof</a></li>
+            <li><a href="/2024/01/28/installing-a-galvalume-standing-seam-metal-roof/">Standing Seam Install</a></li>
+            <li><a href="/2024/01/28/a-big-roof-recover-job-at-fort-rucker/">Fort Rucker Roof Recover with McElroy</a></li>
+            <li><a href="/2024/01/28/find-hip-and-ridge-cap-angles-for-metal-roofing/">Find Angles for Metal Ridge/Hip Caps</a></li>
+            <li><a href="/2024/01/28/how-to-install-a-curved-standing-seam-metal-roof/">Installing a Barrel Metal Roof</a></li>
+          </ul>
+        <li><a href="https://firebasestorage.googleapis.com/v0/b/caldwells-roofing.firebasestorage.app/o/Terms2025July.pdf?alt=media&token=c72b5b86-5c16-4f01-8ac5-e3e0e6416459">Terms and Conditions</a></li>
+      </ul>
+    </nav>
+  </header>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const mobile = window.innerWidth <= 768;
+
+  if (!mobile) return; // Desktop? Let hover and normal click rock.
+
+  document.querySelectorAll("nav > ul > li > a").forEach(link => {
+    const parentLi = link.parentElement;
+    const submenu = parentLi.querySelector("ul");
+
+    if (!submenu) return; // no submenu? skip.
+
+    let tappedOnce = false;
+
+    link.addEventListener("click", function (e) {
+      if (!tappedOnce) {
+        e.preventDefault(); // prevent immediate nav
+        tappedOnce = true;
+
+        // Close other open submenus
+        document.querySelectorAll("nav ul ul").forEach(ul => {
+          if (ul !== submenu) ul.style.display = "none";
+        });
+
+        submenu.style.display = "block";
+
+        // Reset if user taps elsewhere
+        const resetTap = () => {
+          tappedOnce = false;
+          document.removeEventListener("click", resetTap);
+        };
+        setTimeout(() => document.addEventListener("click", resetTap), 0);
+      }
+      // Else: allow default click to navigate
+    });
+  });
+});
+</script>

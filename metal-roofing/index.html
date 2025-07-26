@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metal Roofing – Caldwell's Roofing</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("header-placeholder").innerHTML = html;
+      });
+  </script>
+
+  <div class="hero-image" style="background-image: url('../images/metalHero.png');"></div>
+
+    <main>
+      <section>
+        <h1>Metal Roofing</h1>
+        <p>There are two main options available: standing seam (better) and low-rib (cheaper, leak-prone due to penetrating fasteners), although specialty options exist (metal shingles, solar tiles, etc.).</p>
+        <h2>1. Standing Seam Metal Roofing</h2>
+        <p><strong>Standing seam metal is the roof you buy once and quit worrying about.</strong> Panels lock together with <em>no exposed screws</em>, so rain, wind, and sun don’t get a cheap shot at your home or business. Expect <strong>50+ years of service</strong> with almost zero maintenance—longer if you don’t let trees beat on it.</p>
+
+        <p>Yes, it costs more than screw-down “classic rib,” but this is the system architects spec when they want <strong>beautiful</strong> and <strong>bulletproof</strong>. We form panels on-site for a perfect fit, and when your project calls for curves, we bring out the big toys—a curving machine and a seaming robot—to make metal flow like sculpture.</p>
+
+        <p><strong>Bottom line:</strong> if you’re done patching leaks and replacing shingles every storm season, this is the upgrade.</p>
+
+        <ul>
+          <li><strong>Hidden fasteners</strong> = no rusted screws backing out in 10 years</li>
+          <li><strong>Rated for high winds</strong> common in Alabama storm seasons</li>
+          <li><strong>Cool, reflective finishes</strong> that cut attic heat and AC bills</li>
+          <li><strong>Colors & profiles</strong> that look right on a farmhouse <em>or</em> a modern storefront</li>
+          <li><strong>Installed by a crew</strong> that actually reads the manufacturer specs (because warranties matter)</li>
+        </ul>
+
+      </section>
+
+      <section>
+        <h2>2. Low-Rib (Exposed Fastener) Metal Roofing</h2>
+        <p>Low-rib metal — often called “classic rib,” “R-panel,” or “ag panel” — is the entry-level metal roof. It's made of large, ribbed panels fastened directly through the face with screws and rubber washers.</p>
+
+        <p><strong>It’s affordable, fast to install, and tough enough</strong> for barns, shops, and budget-minded homeowners. But the visible screws aren't just detracting, they often leak with enough time (washers degrade and fail).</p>
+
+        <h3>The Pros:</h3>
+        <ul>
+          <li>👍 Lower cost than standing seam</li>
+          <li>👍 Simple to install over sheds, barns, and low-value structures</li>
+          <li>👍 Looks good from a distance (but can fade in color with time)</li>
+          <li>👍 Still gives better wind and hail resistance than shingles</li>
+        </ul>
+
+        <h3>The Cons:</h3>
+        <ul>
+          <li>👎 <strong>Exposed screws = exposed problems.</strong> Every screw is a potential leak as washers dry out and metal expands/contracts.</li>
+          <li>👎 Screws <strong>back out in 8–15 years</strong>, leaving dozens of holes across your roof</li>
+          <li>👎 Hard to re-seal without looking like a patch job</li>
+          <li>👎 Can’t install on low slopes (&lt;3:12) without serious leak risk</li>
+        </ul>
+
+        <p><strong>Bottom Line:</strong> <em>Low-rib metal can be economical if you understand its risks.</em> If this is your forever home or business, do it once and do it right with standing seam.</p>
+        <p><strong>Get a free, no-pressure inspection and quote → <a href="tel:3343327799">334-332-7799</a></strong></p>
+      </section>
+            <h2>Example Gallery</h2>
+    <div class="grid-container gallery">
+      <figure>
+        <img src="../images/lakeMartinSS.jpg" alt="Lake Martin Dadeville AL Galvalume Standing Seam Roof">
+        <figcaption>Galvalume Standing Seam Roof</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/greenSS.jpg" alt="Green Standing Seam Roof Auburn AL">
+        <figcaption>Green Standing Seam Roof</figcaption>
+      </figure>
+    </div>
+    </main>
+
+  <footer>
+    &copy; 2025 Caldwell's Roofing | Auburn, AL | License #24152
+  </footer>
+</body>
+</html>
+

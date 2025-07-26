@@ -4,92 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Caldwell's Roofing – Auburn, AL</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    .top-bar {
-      background: #003366;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      padding: 0.5em 1em;
-      font-size: 0.9em;
-    }
-    .top-bar a { color: white; text-decoration: none; margin-left: 0.5em; }
-    header {
-      background: white;
-      display: flex;
-      align-items: center;
-      padding: 1em;
-      flex-wrap: wrap;
-    }
-    header img.logo { height: 60px; margin-right: 1em; }
-    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
-    nav li { position: relative; }
-    nav a {
-      display: block;
-      padding: 1em;
-      text-decoration: none;
-      color: #333;
-    }
-    nav li:hover > ul { display: block; }
-    nav ul ul {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background: white;
-      border: 1px solid #ccc;
-      z-index: 100;
-    }
-    nav ul ul li { width: 250px; }
-    main { padding: 2em; max-width: 800px; margin: auto; }
-    h1 { margin-top: 0; }
-    img.inline-img { max-width: 100%; height: auto; display: block; margin: 1em 0; }
-    footer { background: #003366; color: white; text-align: center; padding: 1em; margin-top: 3em; }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-  <div class="top-bar">
-    <div>📞 <a href="tel:3343327799">334-332-7799</a></div>
-    <div>✉️ <a href="mailto:caldwbr@gmail.com">caldwbr@gmail.com</a></div>
-  </div>
-  <header>
-    <a href="/">
-      <img src="/images/logo.jpg" alt="Caldwell's Roofing Logo" class="logo" />
-    </a>
-    <nav>
-      <ul>
-        <li><a href="/gaf-shingle-roofing/">GAF Shingle Roofing &#x25BE;</a>
-          <ul>
-            <li><a href="/gaf-shingle-roofing/gaf-timberline-hdz-dimensional-shingle-reroof/">Timberline HDZ</a></li>
-            <li><a href="/gaf-shingle-roofing/gaf-royal-sovereign-3-tab-shingle-roofing/">Royal Sovereign 3-tab</a></li>
-          </ul>
-        </li>
-        <li><a href="/metal-roofing/">Metal &#x25BE;</a>
-          <ul>
-            <li><a href="/metal-roofing/standing-seam-metal-roofing/">Standing Seam</a></li>
-            <li><a href="/metal-roofing/classic-rib-metal-roofing/">Classic Rib</a></li>
-          </ul>
-        </li>
-        <li><a href="/flat-roofing/">Flat &#x25BE;</a>
-          <ul>
-            <li><a href="/flat-roofing/pvc-membrane-flat-roofing/">PVC</a></li>
-            <li><a href="/flat-roofing/tpo-membrane-flat-roofing/">TPO</a></li>
-          </ul>
-        </li>
-        <li><a href="/slate-roofing/">Slate &#x25BE;</a>
-          <ul>
-            <li><a href="/slate-roofing/real-slate-roofing/">Real</a></li>
-            <li><a href="/slate-roofing/synthetic-slate-roofing/">Synthetic</a></li>
-          </ul>
-        </li>
-        <li><a href="/copper-roofing/">Copper</a></li>
-        <li><a href="/caldwells-roofing-posts/">Posts</a></li>
-        <li><a href="https://firebasestorage.googleapis.com/v0/b/caldwells-roofing.firebasestorage.app/o/Terms2025July.pdf?alt=media&token=c72b5b86-5c16-4f01-8ac5-e3e0e6416459">Terms and Conditions</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("header-placeholder").innerHTML = html;
+      });
+  </script>
+  <div class="hero-image"></div>
+
   <main>
     <h1>Welcome to Caldwell’s Roofing!</h1>
     <p>Serving Auburn, AL since 2008, we provide the following services:</p>
@@ -100,9 +32,274 @@
       <li>Slate roofing (real and synthetic)</li>
       <li>Skylights / repairs</li>
     </ul>
-    <p>Trained in GAF, IB Roof (PVC flat roofs), and McElroy Metal materials, and with SRCA (Slate Roofing Contractors Association), we hold an Alabama home builder’s license (#24152)...</p>
+    <p>Trained in GAF, IB Roof (PVC flat roofs), and McElroy Metal materials, and with SRCA (Slate Roofing Contractors Association), we hold an Alabama home builder’s license (#24152), which equips us to handle large and small roofing projects, as well as worker’s comp and general liability insurance.</p>
     <p><strong>Call now:</strong> <a href="tel:3343327799">334.332.7799</a></p>
-
+    
+    <h2>Project Gallery</h2>
+    <div class="grid-container gallery">
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="/videos/pikeRoadGreyPVCSS.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Grey IB PVC and Burnished Snap-Lok Slate Standing Seam, Pike Road</figcaption>
+      </figure>
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="/videos/greenSSSmithStation.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Green Snap-Lok Standing Seam, Smith's Station</figcaption>
+      </figure>
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="/videos/ruckerRobot2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Ryan Runs Robot to Seam Maxima Panel (McElroy Metal)</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/springvilla.jpg" alt="Springvilla Campground Opelika AL, Evergreen McElroy Metal Medallion-Lok Roof">
+        <figcaption>Evergreen McElroy Metal Medallion-Lok Roof, Springvilla Campground Opelika</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/cu4.jpg" alt="Copper Swoop Roof, Tigertown AL">
+        <figcaption>Copper Swoop/Hip Roofs and GAF Shingle Roof Behind Tigertown</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/ruckerBoss2.jpg" alt="Fort Rucker Boss Roof">
+        <figcaption>One of The Two Bosses on Fort Rucker McElroy Metal Roof Recover</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/copperSwoop.jpg" alt="Copper Roofing Swoop Cary Woods Auburn AL">
+        <figcaption>Custom Copper Panel Work, Swoop Style, Cary Woods</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/mattBootInstall.jpg" alt="Boot Flashing Install">
+        <figcaption>Matt, Who Taught Brad in Metal Roofing Techniques, Installing a Shroud Over a Boot</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/burnishedMontSS.jpg" alt="Burnished Slate Snap-Lok Standing Seam Montgomery AL">
+        <figcaption>Burnished Slate Snap-Lok Standing Seam in Montgomery, AL</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/syntheticSlate.jpg" alt="Synthetic Slate Roof">
+        <figcaption>Synthetic Slate Roof</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/dadevilleSSSh.jpg" alt="Standing Seam Roof Dadeville">
+        <figcaption>Burnished Slate Snap-Lok Standing Seam and GAF Shingle Roof at Lake Martin</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/lakeMartinSS.jpg" alt="Lake Martin Standing Seam">
+        <figcaption>Galvalume Snap-Lok Standing Seam Roof at Lake Martin</figcaption>
+      </figure>
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="/videos/beginningOfRucker.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Beginning Fort Rucker Gym/Daycare Roof Recover (3-Month Job)</figcaption>
+      </figure>
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="/videos/baptistTaperedTPO.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Tapered Insulation and TPO for Baptist Church in Beulah</figcaption>
+      </figure>
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="/videos/ventInsectScreen.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Ventilation and Insect-Screening at Ridge, Smith's Station</figcaption>
+      </figure>
+            <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="/videos/opelikaTPOVelux.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>TPO Flat Roof and GAF Royal Sovereign 3-Tab Roof in Opelika</figcaption>
+      </figure>
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="/videos/whiteSSBeauregard.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>White Snap-Lok Standing Seam, in Beauregard</figcaption>
+      </figure>
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="/videos/whiteSSBeauregard2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Ground Shot of White Metal Roof, Beauregard</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/ssGalvalume.jpg" alt="Galvalume Roof on Architect Designed Home">
+        <figcaption>Galvalume Snap-Lok Standing Seam for an Architect-Designed Home</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/bowAndArrowBBQBrownPVC.jpg" alt="Bow and Arrow Restaurant Brown PVC Flat Roof">
+        <figcaption>Brown PVC Membrane Roof</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/bow2.jpg" alt="Brown PVC Membrane Roof Auburn AL">
+        <figcaption>Valley Cricket Detail Behind Chimney Using IB PVC</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/johnRoffPVCBowAndArrow.jpg" alt="Brown IB PVC Roof Bow and Arrow Restaurant Opelika">
+        <figcaption>Brown IB PVC Membrane Roof on Bow and Arrow Restaurant</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/tynseanMartin.jpg" alt="Standing Seam Dadeville AL">
+        <figcaption>Ty and Sean, Burnished Slate Snap-Lok Standing Seam Metal at Lake Martin</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/bradBlackSSFairway.jpg" alt="Black Metal Roof Moore's Mill">
+        <figcaption>Owner, Brad Caldwell, on Black Snap-Lok Standing Seam Metal Roof in Moore's Mill</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/bradCopperPikeRoad.jpg" alt="Cutting Copper for a Window Well Roof Detail">
+        <figcaption>Brad Cutting Copper in Pike Road, Alabama</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/bradReflection.jpg" alt="Caldwells Roofing Owner at Fort Rucker">
+        <figcaption>Brad at Fort Rucker Project</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/john.png" alt="John at Roof Repair in Auburn">
+        <figcaption>John on Roof Repair</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/niceTPOGroveHill.PNG" alt="TPO Roof Grove Hill Auburn">
+        <figcaption>GAF TPO Membrane on Flat Roof</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/tpoGroveHillToo.PNG" alt="TPO Membrane Roof Auburn AL">
+        <figcaption>GAF TPO Tied in to Shingle Roof</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/tpoGroveHillThree.PNG" alt="GAF TPO Flat Roof Auburn AL">
+        <figcaption>GAF TPO Membrane Roof</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/sorority.JPG" alt="GAF Charcoal New Roof">
+        <figcaption>GAF Charcoal Shingle Roof with Charcoal Snap-Lok Standing Seam on Porches</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/sorority2.JPG" alt="GAF Shingle Roof on Armstrong St by Auburn Islamic Center">
+        <figcaption>Steep Roof on Three-Story Housing</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/sororityHi.jpg" alt="GAF shingle roof on three story Auburn sorority type buildings">
+        <figcaption>GAF Timberline HDZ Charcoal Color Shingles</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/overviewInspection.JPG" alt="Drone Roof Inspection Auburn Opelika">
+        <figcaption>Drone Roof Inspection in Auburn</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/agProfileLand.JPG" alt="AG Profile Low Rib Metal Roof Oak Bowery Rd Opelika">
+        <figcaption>Ag Profile Metal Roof, Oak Bowery Road in Opelika</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/FleecebackTPOOpelika.jpg" alt="Fleeceback TPO Attached with Two Part Low Rise Foam">
+        <figcaption>Fleeceback TPO Roof Over ISO Insulation, Record Store and Speakeasy in Opelika</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/columbusGAToo.PNG" alt="GAF Shingles and GAF TPO Flat Roofs Columbus GA">
+        <figcaption>House in Columbus GA Getting GAF Shingles and GAF TPO (White)</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/columbusGATPOGAF.PNG" alt="TPO Cricket Installed in Columbus GA Ten Years Ago">
+        <figcaption>TPO Cricket Close-Up (This Image Taken in 2016)</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/tpoRepair.jpg" alt="AG Profile Low Rib Metal Roof Oak Bowery Rd Opelika">
+        <figcaption>Same Home Getting a Warranty Patch 9 Years Later (2025)</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/brownPVCTuskegee.jpg" alt="Brown IB PVC Job in Tuskegee Al">
+        <figcaption>Brown IB PVC Flat Roof and GAF Royal Sovereign 3-Tab Shingle Roof in Tuskegee, AL</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/culverJGreyPVC.png" alt="Grey IB PVC Job off University Dr Auburn">
+        <figcaption>Culver and John, Grey IB PVC Job in Auburn</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/acreRestaurantAuburnRoofRepairs.JPG" alt="Roof Repair Service in Auburn AL">
+        <figcaption>Roof Repair Work at Acre Restaurant in Auburn</figcaption>
+      </figure>
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="/videos/baptistTaperedTPO.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Finishing a Tapered Insulation and TPO Install in Beulah, AL</figcaption>
+      </figure>
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="/videos/jtOpelikaPVC3.MOV" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Installing IB Roof's PVC Membrane in Auburn/Opelika Area</figcaption>
+      </figure>
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="/videos/opelikaTPOVelux.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>A GAF TPO and GAF 3-Tab Shingle Reroof in Opelika, with Lots of Boots and a Velux Skylight and Solar Tubes</figcaption>
+      </figure>
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="/videos/hammering.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Finishing Up a Roof Job</figcaption>
+      </figure>
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="/videos/ruckerScrewing.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Installing Screws in Steel Purlins for Roof Recover, Fort Rucker</figcaption>
+      </figure>
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="/videos/afterRucker.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Jerry Screws Cleats to Deck, McElroy Metal's Maxima Panel</figcaption>
+      </figure>
+    </div>
+    
+    <h2>Certifications</h2>
+    <div class="grid-container certs">
+      <figure>
+        <img src="/images/McElroyCert.jpg" alt="McElroy Certification">
+        <figcaption>McElroy Metal Certification</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/NRCACert.png" alt="NRCA Membership">
+        <figcaption>NRCA Member</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/srcaCert.jpg" alt="Slate Roofing Association">
+        <figcaption>Slate Roofing Contractors Association</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/gafAuth.png" alt="GAF Authorized Installer">
+        <figcaption>GAF Authorized Contractor</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/gafCert.png" alt="GAF Certified Installer">
+        <figcaption>GAF Certified Roofer</figcaption>
+      </figure>
+    </div>
+    
     <h2>FAQs</h2>
     <ul>
       <li><strong>Insurance work?</strong> Yes. We have successfully up-negotiated missed scope of work (for one client with a large home, we found and secured nearly $40,000 of missed scope). We have worked with several insurance companies in performing reroof- and even additional involved trades- work claims, whether due to hail, storm, or wind.</li>
