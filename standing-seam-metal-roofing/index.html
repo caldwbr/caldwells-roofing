@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Standing Seam Metal Roofing – Caldwell's Roofing</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("header-placeholder").innerHTML = html;
+      });
+  </script>
+
+  <div class="hero-image" style="background-image: url('../images/payneStGalvSS.jpg');"></div>
+
+    <main>
+      <section>
+        <h1>Standing Seam Metal Roofing</h1>
+        <p>Standing seam gets its name from the fairly tall, vertical ribs spaced evenly at 16" apart. While pricy, it is very long-lasting, leak-proof, impact-resistant (hail), good-looking, and reflective (better for AC bills in hot summers).</p>
+
+        <p><strong>Get a free, no-pressure inspection and quote → <a href="tel:3343327799">334-332-7799</a></strong></p>
+      </section>
+            <h2>Example Gallery</h2>
+    <div class="grid-container gallery">
+      <figure>
+        <img src="../images/lakeMartinSS.jpg" alt="Lake Martin Dadeville AL Galvalume Standing Seam Roof">
+        <figcaption>Hail Damage Insurance Claim: Galvalume Standing Seam Roof + Wood Shake Upgrades</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/greenSS.jpg" alt="Green Standing Seam Roof Auburn AL">
+        <figcaption>Green Standing Seam Roof Behind Auburn Art Museum</figcaption>
+      </figure>
+      <figure>
+        <video autoplay muted loop playsinline width="50%">
+          <source src="../videos/greenSSSmithStation.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Green Snap-Lok Standing Seam Roof in Smith's Station AL</figcaption>
+      </figure>
+    </div>
+    </main>
+
+  <footer>
+    &copy; 2025 Caldwell's Roofing | Auburn, AL | License #24152
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Slate Roofing – Caldwell's Roofing</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("header-placeholder").innerHTML = html;
+      });
+  </script>
+
+  <div class="hero-image" style="background-image: url('../images/historicVermontBlend.png');"></div>
+    <p>   Product Example Image of Historic Vermont Blend from <a href="https://vermontslateco.com/slate/historic-vermont-blend/">Vermont Slate Co.</a></p>
+
+    <main>
+      <section>
+        <h1>Real Slate Roofing</h1>
+        <p>Real slate, when sourced from a reputable quarry, is a gorgeous product that will last for 100+ years. Very impact resistant and low-maintenance. If you source from a supplier who does not know where the slate came from, it will likely disintegrate in 1-5 years. Quality quarries, such as those in the Northeast US, provide solid material that is light and day different from the cheap knock-offs often used in Auburn.</p>
+
+        <p><strong>Get a free, no-pressure inspection and quote → <a href="tel:3343327799">334-332-7799</a></strong></p>
+      </section>
+            <h2>Example Gallery</h2>
+    <div class="grid-container gallery">
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="../videos/bradSlateTrim.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Brad Getting Training at 2018 Slate Roofing Contractors Association Expo</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/slateMock.jpg" alt="Slate Mock Up">
+        <figcaption>Slate Mock-Up at Convention</figcaption>
+      </figure>
+      <figure>
+        <video autoplay muted loop playsinline width="100%">
+          <source src="../videos/slateRepairS.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Brad Demonstrates Repair of a Slate Tile</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Caldwell's Roofing | Auburn, AL | License #24152
+  </footer>
+</body>
+</html>
+
+

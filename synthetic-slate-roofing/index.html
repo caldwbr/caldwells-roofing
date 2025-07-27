@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Synthetic Slate Roofing – Caldwell's Roofing</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("header-placeholder").innerHTML = html;
+      });
+  </script>
+
+  <div class="hero-image" style="background-image: url('../images/syntheticSlateBig.jpg');"></div>
+    <p>   Product Example Image of Historic Vermont Blend from <a href="https://vermontslateco.com/slate/historic-vermont-blend/">Vermont Slate Co.</a></p>
+
+    <main>
+      <section>
+        <h1>Synthetic Slate Roofing</h1>
+        <p>Synthetic slate: while not actual rock, this look-alike has light weight and doesn't require extensive training to learn. Beware the potential for cupping of tiles with age, regardless of what you've heard.</p>
+
+        <p><strong>Get a free, no-pressure inspection and quote → <a href="tel:3343327799">334-332-7799</a></strong></p>
+      </section>
+            <h2>Example Gallery</h2>
+    <div class="grid-container gallery">
+      <figure>
+        <img src="../images/synSlate1.jpg" alt="Synthetic Slate">
+        <figcaption>Synthetic Slate Bundle</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/synSlate2.jpg" alt="Bundle of Synthetic Slate">
+        <figcaption>Synthetic Slate Imitates Real Slate</figcaption>
+      </figure>
+      <figure>
+        <img src="../images/syntheticSlate.jpg" alt="Home with Synthetic Slate">
+        <figcaption>Whole House with Synthetic Slate</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Caldwell's Roofing | Auburn, AL | License #24152
+  </footer>
+</body>
+</html>
+
+
