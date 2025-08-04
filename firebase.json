@@ -7,6 +7,16 @@
       "**/.git/**",          // ignore Git internals
       "**/node_modules/**",  // ignore dependencies if they exist
       "**/*.mov"             // ignore raw .mov files (convert to .mp4 before deploying)
+    ],
+    "rewrites": [
+      {
+        "source": "/header.html",
+        "destination": "/header.html"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }
