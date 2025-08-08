@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "caldwells-roofing"
-  }
+  },
+  "targets": {
+    "caldwells-roofing": {
+      "hosting": {
+        "live": [
+          "caldwells-roofing"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

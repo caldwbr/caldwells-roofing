@@ -160,7 +160,66 @@ nav ul ul li {
   width: 100%;
 }
 
-/* Force images to be larger - override any existing rules */
+/* Style only forms inside .grid-container */
+.grid-container form {
+  display: grid;
+  grid-template-columns: 1fr; /* default single column on mobile */
+  gap: 0.8em;
+  width: 100%;
+  padding: 1em;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Side-by-side fields when wide enough */
+@media (min-width: 768px) {
+  .grid-container form {
+    grid-template-columns: 1fr 1fr; /* two columns */
+  }
+  .grid-container form label {
+    grid-column: span 2; /* labels over both cols */
+  }
+  .grid-container form textarea {
+    grid-column: span 2;
+  }
+  .grid-container form button {
+    grid-column: span 2;
+  }
+}
+
+/* Inputs */
+.grid-container form label {
+  font-weight: 600;
+}
+.grid-container form input,
+.grid-container form select,
+.grid-container form textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+/* Button */
+.grid-container form button {
+  background: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75em;
+  cursor: pointer;
+  font-weight: 700;
+}
+.grid-container form button:hover {
+  background: #022a55;
+}
+
+
+/* Default: keep full image visible unless orientation class is set */
 .grid-container img,
 .grid-container.gallery img {
   width: 100% !important;
@@ -168,9 +227,28 @@ nav ul ul li {
   min-height: 250px !important;
   max-height: none !important;
   max-width: 100% !important;
-  object-fit: contain !important;
+  object-fit: contain !important; /* preserve original unless overridden below */
   display: block !important;
   margin: 0 !important;
+}
+
+/* Soft crop rules applied only when JS tags image as .landscape or .portrait */
+.grid-container img.landscape {
+  aspect-ratio: 4 / 3;                /* consistent ratio for horizontals */
+  object-fit: cover !important;       /* allow slight crop */
+  object-position: center 35%;        /* bias upward to save heads */
+}
+
+.grid-container img.portrait {
+  aspect-ratio: 3 / 4;                /* consistent ratio for verticals */
+  object-fit: cover !important;       /* allow slight crop */
+  object-position: center 35%;
+}
+
+.grid-container img.square {
+  aspect-ratio: 1 / 1;                 /* perfect square */
+  object-fit: cover !important;        /* allow slight crop */
+  object-position: center 35%;
 }
 
 .grid-container figcaption {
@@ -232,3 +310,6 @@ main figure.wide-formula img {
   max-height: 300px;
   width: auto;
 }
+
+
+
