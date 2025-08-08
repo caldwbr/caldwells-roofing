@@ -8,6 +8,21 @@
       "**/node_modules/**",  // ignore dependencies if they exist
       "**/*.mov"             // ignore raw .mov files (convert to .mp4 before deploying)
     ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          },
+          {
+            "key": "Content-Security-Policy",
+            "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.youtube.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-src https://www.youtube.com; object-src 'none';"
+          }
+        ]
+      }
+    ],
     "rewrites": [
       {
         "source": "/header.html",
