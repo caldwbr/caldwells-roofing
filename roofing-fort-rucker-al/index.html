@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L60F0V6E0R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-L60F0V6E0R');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Roofing at Fort Rucker, AL — gym & daycare recover, standing seam recover, and low-slope membranes by Caldwell's Roofing. Licensed, government-compliant installs."/>
+  <title>Roofing Fort Rucker, AL – Caldwell's Roofing</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <!-- Header partial -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(res => res.text())
+      .then(html => document.getElementById("header-placeholder").innerHTML = html);
+  </script>
+
+  <!-- Hero -->
+  <div class="hero-image" style="background-image: url('../images/metalHero.jpg');"></div>
+
+  <main>
+    <section>
+      <h1>Roofing at Fort Rucker, AL</h1>
+      <p>When government specs call for precision, that’s when Caldwell’s steps up. We handled the large-scale gym/daycare roof recover at Fort Rucker — merging angled metal and flat membrane roofing before building a metal shell over top. This is the kind of project scale that makes the trip worthwhile.</p>
+    </section>
+
+    <section>
+      <h2>Fort Rucker/Government Work Only</h2>
+      <p>Because of the distance and logistics, we only take on <strong>large commercial or federal projects</strong> in the Fort Rucker area — think reroofs, building recoveries, multi-system upgrades, or heavy-compliance work. Not small residential jobs. If your project meets those criteria, send over plans or photos and we’ll quote it fast.</p>
+    </section>
+
+    <section>
+      <h2>What We Delivered at Fort Rucker</h2>
+      <ul>
+        <li><strong>Gym/daycare recover:</strong> integrated existing metal and flat sections under new metal framing.</li>
+        <li><strong>High-performance metals:</strong> robot-seamed max-profile standing seam (McElroy Metal), framed for military durability.</li>
+        <li><strong>Compliance-grade installation:</strong> photo documentation, line-item scopes, Federal contractor accountability.</li>
+      </ul>
+      <p><strong>Project review → <a href="tel:3343327799">334-332-7799</a></strong></p>
+    </section>
+
+    <section>
+      <h2>Fort Rucker Project Gallery</h2>
+      <div class="grid-container gallery">
+        <figure>
+          <img src="../images/ruckerBegin.jpg" class="landscape" alt="Wide view of Fort Rucker gym/daycare roof recover">
+          <figcaption>Wide view of gym/daycare roof recover</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/ruckerBoss2.jpg" class="landscape" alt="Standing seam panel installation at Fort Rucker">
+          <figcaption>Standing seam panel installation</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/ruckerRoffJohn.jpg" class="landscape" alt="Flat roof tie-in under new metal shell at Fort Rucker">
+          <figcaption>Installing purlin sleepers prior to roof recover</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Why Caldwell’s for Government Work</h2>
+      <ul>
+        <li><strong>Licensed & insured:</strong> Alabama License #24152 + experience with federal/commercial compliance.</li>
+        <li><strong>Quality-first installs:</strong> clean welds, precision framing, watertight seams, documented execution.</li>
+        <li><strong>Clear scope transparency:</strong> project milestones, plans, photos—so approvals and billing stay clean.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer partial -->
+  <div id="footer"></div>
+  <script>
+    fetch('/footer.html')
+      .then(r => r.text())
+      .then(html => document.getElementById('footer').innerHTML = html)
+      .catch(err => console.error('Footer load error:', err));
+  </script>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RoofingContractor",
+    "name": "Caldwell's Roofing",
+    "areaServed": "Fort Rucker, Alabama",
+    "url": "https://caldwells-roofing.com/roofing-fort-rucker-al/",
+    "telephone": "+13343327799",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Auburn",
+      "addressRegion": "AL",
+      "addressCountry": "US"
+    },
+    "license": "24152"
+  }
+  </script>
+</body>
+</html>

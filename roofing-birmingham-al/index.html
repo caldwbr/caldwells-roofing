@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L60F0V6E0R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-L60F0V6E0R');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Roofing in Birmingham, AL — reroofs, repairs, standing seam metal, and PVC/TPO flat roofs by Caldwell's Roofing. Licensed, detail-driven installs for homes and small commercial." />
+  <title>Roofing Birmingham, AL – Caldwell's Roofing</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+  <!-- Header partial -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(res => res.text())
+      .then(html => { document.getElementById("header-placeholder").innerHTML = html; });
+  </script>
+
+  <!-- Hero (representative project image) -->
+  <div class="hero-image" style="background-image: url('../images/overviewInspection.JPG');"></div>
+
+  <main>
+    <section>
+      <h1>Roofing in Birmingham, AL</h1>
+      <p><strong>Birmingham</strong> combines historic neighborhoods with modern builds, steep pitches with flat additions, and plenty of tree cover. We install
+        <a href="/gaf-shingle-roofing/">GAF architectural shingles</a>,
+        <a href="/metal-roofing/">standing seam &amp; classic rib metal</a>, and
+        <a href="/flat-roofing/">PVC/TPO low-slope membranes</a> with the same tight detailing and straight geometry we’re known for.</p>
+      <p><strong>Call/Text:</strong> <a href="tel:3343327799">334-332-7799</a> • <strong>Email:</strong> <a href="mailto:caldwbr@gmail.com">caldwbr@gmail.com</a></p>
+    </section>
+
+    <section>
+      <h2>What We Do in Birmingham (for Sufficiently Large Projects, 2-hr Commute from Base at Auburn)</h2>
+      <ul>
+        <li><strong>Full replacements</strong> — Timberline HDZ shingles, true standing seam metal, or PVC for low-slope areas.</li>
+        <li><strong>Repairs &amp; leak tracing</strong> — valleys, sidewalls, chimney/cricket rebuilds, pipe boots, skylights, transitions.</li>
+        <li><strong>Low-slope done right</strong> — tapered insulation for drainage, hot-air welded seams, clean scuppers/outlets.</li>
+        <li><strong>Storm response</strong> — temporary dry-in, photo documentation, and line-item estimates for claims.</li>
+      </ul>
+      <p><strong>No-pressure inspection → <a href="tel:3343327799">334-332-7799</a></strong></p>
+    </section>
+
+    <section>
+      <h2>Why Caldwell’s</h2>
+      <ul>
+        <li><strong>Licensed &amp; accountable:</strong> Alabama License #24152.</li>
+        <li><strong>Detail-obsessed installs:</strong> correct valley geometry, sidewall/chimney flashing, crisp edges, tidy sites.</li>
+        <li><strong>Clear scopes:</strong> photo reports + line items so you know exactly what’s included.</li>
+        <li><strong>Right system for your roof:</strong> shingle/metal/PVC chosen by pitch, use-case, and lifecycle—not upsells.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Birmingham Projects (Gallery)</h2>
+      <div class="grid-container gallery">
+        <figure>
+          <img src="../images/finishedCulver.jpg" class="landscape" alt="PVC low-slope edge and corner detailing">
+          <figcaption>PVC low-slope with crisp edge metals</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/royTPOGAF.jpg" class="landscape" alt="Architectural shingles with low-slope tie-in">
+          <figcaption>Architectural shingles with low-slope tie-in</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/tOpelikePVC2.jpg" class="landscape" alt="White PVC membrane with clean terminations">
+          <figcaption>White PVC membrane—clean terminations and drains</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Neighborhoods &amp; Corridors We Serve</h2>
+      <p>For sufficiently large projects (due to distance from our base at Auburn AL), we can work across <em>Homewood</em>, <em>Mountain Brook</em>, <em>Hoover</em>, <em>Vestavia Hills</em>, <em>Trussville</em>, and <em>Avondale/Crestwood</em>—plus surrounding communities in Jefferson and Shelby Counties.</p>
+    </section>
+
+    <section>
+      <p><strong>Ready for straight numbers?</strong> Call <a href="tel:3343327799">334-332-7799</a> or email <a href="mailto:caldwbr@gmail.com">caldwbr@gmail.com</a>.</p>
+    </section>
+  </main>
+
+  <!-- Footer partial -->
+  <div id="footer"></div>
+  <script>
+    fetch('/footer.html')
+      .then(r => r.text())
+      .then(html => { document.getElementById('footer').innerHTML = html; })
+      .catch(err => console.error('Footer load error:', err));
+  </script>
+
+  <!-- JSON-LD (HQ in Auburn; page targeted to Birmingham) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RoofingContractor",
+    "name": "Caldwell's Roofing",
+    "areaServed": "Birmingham, Alabama",
+    "url": "https://caldwells-roofing.com/roofing-birmingham-al/",
+    "telephone": "+13343327799",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Auburn",
+      "addressRegion": "AL",
+      "addressCountry": "US"
+    },
+    "license": "24152"
+  }
+  </script>
+</body>
+</html>

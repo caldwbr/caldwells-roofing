@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L60F0V6E0R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-L60F0V6E0R');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Roofing in Alexander City, AL — replacements, repairs, metal and PVC/TPO flat roofing by Caldwell's Roofing. Licensed, detail-driven, locally respected." />
+  <title>Roofing Alexander City, AL – Caldwell's Roofing</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+  <!-- Header partial -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(res => res.text())
+      .then(html => { document.getElementById("header-placeholder").innerHTML = html; });
+  </script>
+
+  <!-- Hero (choose an Alexander City relevant image if available) -->
+  <div class="hero-image" style="background-image: url('../images/overviewInspection.JPG');"></div>
+
+  <main>
+    <section>
+      <h1>Roofing in Alexander City, AL</h1>
+      <p>You know that Lake Martin aesthetic—crisp geometry, practical function, quality that lasts. We build roofs with that same sense: meticulous work, clean detailing, and proposals you can trust.</p>
+      <p>We install
+        <a href="/gaf-shingle-roofing/">GAF architectural shingles</a>,
+        <a href="/metal-roofing/">standing seam &amp; classic rib metal</a>, and
+        <a href="/flat-roofing/">PVC/TPO low-slope membranes</a> for everything from waterfront cottages to steep-pitch homes.</p>
+      <p><strong>Call/Text:</strong> <a href="tel:3343327799">334-332-7799</a> • <strong>Email:</strong> <a href="mailto:caldwbr@gmail.com">caldwbr@gmail.com</a></p>
+    </section>
+
+    <section>
+      <h2>What We Do in Alexander City</h2>
+      <ul>
+        <li><strong>Complete reroofs</strong> — Timberline HDZ shingles, standing seam metal, PVC for porches/addition low areas.</li>
+        <li><strong>Leak tracing & repairs</strong> — step flashings, chimneys, pipe boots, valley fixes near docks or dormers.</li>
+        <li><strong>Low-slope done right</strong> — welded seams, drainage design, neat scupper solutions for waterside roofs.</li>
+        <li><strong>Storm & seasonal prep</strong> — high-wind fixes, photo documentation, clear scopes before noisy storms.</li>
+      </ul>
+      <p><strong>No-pressure inspection → <a href="tel:3343327799">334-332-7799</a></strong></p>
+    </section>
+
+    <section>
+      <h2>Why Caldwell’s</h2>
+      <ul>
+        <li><strong>Licensed & accountable:</strong> Alabama License #24152. We work regularly in Tallapoosa County.</li>
+        <li><strong>Obsessed with detail:</strong> tight ridge caps, proper valley cuts, secure perimeter flashings.</li>
+        <li><strong>Fair scope and pricing:</strong> you see photos and line items, no guesswork or last-minute surprises.</li>
+        <li><strong>Roof system fit:</strong> selecting shingle, metal, or PVC based on geometry and culture, not upselling.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Examples from Nearby</h2>
+      <div class="grid-container gallery">
+        <figure>
+          <img src="../images/pvcCPorchDadeville.jpg" class="landscape" alt="PVC low-slope roof detail in Alexander City AL">
+          <figcaption>Clean PVC roof in Alexander City, AL</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/royTPOGAF.jpg" class="landscape" alt="Architectural shingles + low-slope tie-in">
+          <figcaption>Architectural shingles with low-slope tie-in</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/niceTPOGroveHill.jpg" class="landscape" alt="TPO low-slope with clean termination">
+          <figcaption>TPO low-slope with clean termination</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/tOpelikePVC2.jpg" class="landscape" alt="White PVC membrane">
+          <figcaption>White PVC membrane—tight corners, clean drains</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <p><strong>Ready for clear, honest pricing and a smooth install?</strong> Call <a href="tel:3343327799">334-332-7799</a> or email <a href="mailto:caldwbr@gmail.com">caldwbr@gmail.com</a>.</p>
+      <p><em>Serving Alexander City, Lake Martin neighborhoods, Dadeville, and adjacent communities.</em></p>
+    </section>
+  </main>
+
+  <!-- Footer partial -->
+  <div id="footer"></div>
+  <script>
+    fetch('/footer.html')
+      .then(r => r.text())
+      .then(html => { document.getElementById('footer').innerHTML = html; })
+      .catch(err => console.error('Footer load error:', err));
+  </script>
+
+  <!-- JSON-LD (HQ in Auburn; area target Alexander City) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RoofingContractor",
+    "name": "Caldwell's Roofing",
+    "areaServed": "Alexander City, Alabama",
+    "url": "https://caldwells-roofing.com/roofing-alexander-city-al/",
+    "telephone": "+13343327799",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Auburn",
+      "addressRegion": "AL",
+      "addressCountry": "US"
+    },
+    "license": "24152"
+  }
+  </script>
+</body>
+</html>

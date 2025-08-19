@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L60F0V6E0R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-L60F0V6E0R');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auburn Chamber Referral – Free Roof Estimate | Caldwell's Roofing</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="robots" content="noindex,follow">
+
+  <style>
+    /* Keep hero and referral styles, remove global header/footer junk */
+    .hero-image { height: 36vh; background-size: cover; background-position: center; }
+    main { max-width: 1100px; margin: 0 auto; padding: 1.5rem; } /* keeps normal feel */
+
+    .referral-wrap {
+      display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: start;
+      margin-block: 2rem 3rem;
+    }
+    @media (max-width: 900px) { .referral-wrap { grid-template-columns: 1fr; } }
+
+    h1, h2, h3, .tight { hyphens: auto; overflow-wrap: anywhere; }
+    .referral-copy ul.benefits { margin: 1rem 0 0; padding-left: 1.25rem; }
+    .referral-copy ul.benefits li { margin: 0.35rem 0; }
+
+    .referral-card {
+      background: #fff; border: 1px solid #e6e6e6; border-radius: 14px; padding: 1.25rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      overflow: hidden; /* no input bleed */
+    }
+    .referral-card h3 { margin: 0 0 0.75rem 0; font-size: 1.25rem; }
+
+    /* Inputs behave inside the card */
+    .referral-card, .referral-card * { box-sizing: border-box; }
+    .form-row { margin-bottom: 0.9rem; }
+    .form-row label { display: block; font-size: 0.95rem; margin-bottom: 0.35rem; }
+    .referral-card input[type="text"],
+    .referral-card input[type="tel"],
+    .referral-card input[type="email"],
+    .referral-card textarea {
+      display: block; width: 100%; max-width: 100%;
+      border: 1px solid #d2d6dc; border-radius: 10px; padding: 0.65rem 0.8rem;
+      font-size: 1rem; outline: none; transition: border-color 120ms ease, box-shadow 120ms ease;
+      background: #fafafa;
+    }
+    .referral-card textarea { resize: vertical; min-height: 120px; }
+    .referral-card input:focus, .referral-card textarea:focus {
+      border-color: #7aa2ff; box-shadow: 0 0 0 3px rgba(122,162,255,0.2); background: #fff;
+    }
+
+    .btn-primary {
+      display: inline-block; border: 0; background: #0f62fe; color: #fff; font-weight: 600;
+      padding: 0.75rem 1rem; border-radius: 12px; cursor: pointer;
+      transition: transform 80ms ease, box-shadow 120ms ease;
+    }
+    .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 8px 16px rgba(0,0,0,0.12); }
+    .btn-primary:active { transform: translateY(0); box-shadow: none; }
+    .tiny-note { color: #6b7280; font-size: 0.85rem; margin-top: 0.5rem; }
+
+    /* Optional: subtle “Chamber-only” banner */
+    .ribbon {
+      background: #f3f4f6; border: 1px solid #e5e7eb; border-radius: 10px; padding: 0.75rem 1rem;
+      font-size: 0.95rem; margin-top: 0.75rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NO header/footer injected on purpose -->
+
+  <!-- Hero image stays -->
+  <div class="hero-image" style="background-image:url('../images/auReferralAffiliate.jpg');"></div>
+
+  <main>
+    <h1>Auburn Chamber Referral – Free Roof Estimate</h1>
+    <p>If you were sent here by the <strong>Auburn Chamber of Commerce</strong>, you’re in the right place.
+       Fill this out and we’ll jump on it.</p>
+    <div class="ribbon">This page is dedicated to Auburn Chamber referrals.</div>
+
+    <section class="referral-wrap">
+      <div class="referral-copy">
+        <h2 class="tight">Auburn Chamber Referral – Free Roof Estimate</h2>
+        <p>Referred by the <strong>Auburn Chamber</strong>? You’re in the right place.
+           Tell us a bit about the property and we’ll reach out fast.</p>
+
+        <ul class="benefits">
+          <li>Priority scheduling for Chamber referrals</li>
+          <li>Full written estimate</li>
+          <li>Licensed • Insured • Local</li>
+        </ul>
+        <p style="margin-top:1rem; font-size:0.95rem;">
+          <em>Chamber partners: please use this page when sending referrals so we can credit you properly.</em>
+        </p>
+      </div>
+
+      <form class="referral-card" action="https://formspree.io/f/mqalgrdd" method="POST">
+        <h3>Start Your Estimate</h3>
+
+        <div class="form-row">
+          <label for="name">Your Name*</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone*</label>
+          <input type="tel" id="phone" name="phone" inputmode="tel" placeholder="(###) ###-####" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email (optional)</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+        </div>
+
+        <div class="form-row">
+          <label for="address">Property Address*</label>
+          <input type="text" id="address" name="address" placeholder="Street" required>
+        </div>
+          
+        <div class="form-row">
+          <label for="city">City*</label>
+          <input type="text" id="city" name="city" placeholder="City" required>
+        </div>
+
+        <div class="form-row">
+          <label for="details">Anything we should know?</label>
+          <textarea id="details" name="details" rows="4" placeholder="Leaks, age, insurance claim, steep pitch, etc."></textarea>
+        </div>
+
+        <!-- Tracking -->
+        <input type="hidden" name="source" value="Auburn Chamber">
+        <input type="hidden" name="_subject" value="Auburn Chamber Referral – New Lead">
+        <input type="text" name="_gotcha" style="display:none">
+
+        <!-- Optional redirect after submit -->
+        <input type="hidden" name="_redirect" value="https://caldwells-roofing.com/thanks.html">
+
+        <button type="submit" class="btn-primary">Get My Free Estimate</button>
+        <p class="tiny-note">By submitting, you agree we may contact you about this estimate.</p>
+      </form>
+    </section>
+  </main>
+
+  <!-- NO footer -->
+</body>
+</html>
+

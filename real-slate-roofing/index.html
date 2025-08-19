@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L60F0V6E0R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-L60F0V6E0R');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Real Slate Roofing – Caldwell's Roofing</title>
@@ -53,9 +62,15 @@
     </div>
   </main>
 
-  <footer>
-    &copy; 2025 Caldwell's Roofing | Auburn, AL | License #24152
-  </footer>
+  <div id="footer"></div>
+  <script>
+    fetch('/footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer').innerHTML = html;
+      })
+      .catch(err => console.error('Footer load error:', err));
+  </script>
 </body>
 </html>
 

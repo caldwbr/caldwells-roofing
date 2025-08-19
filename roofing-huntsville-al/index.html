@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L60F0V6E0R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-L60F0V6E0R');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Roofing in Huntsville, AL — replacements, standing seam metal, and PVC/TPO flat roofs by Caldwell's Roofing. Licensed, detail-driven installs. Larger projects only in Huntsville due to distance." />
+  <title>Roofing Huntsville, AL – Caldwell's Roofing</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+  <!-- Header partial -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(res => res.text())
+      .then(html => { document.getElementById("header-placeholder").innerHTML = html; });
+  </script>
+
+  <!-- Hero (representative project image) -->
+  <div class="hero-image" style="background-image: url('../images/rocketHuntsville.jpg');"></div>
+
+  <main>
+    <section>
+      <h1>Roofing in Huntsville, AL</h1>
+      <p><strong>Huntsville</strong> sets a high bar—precision, integrity, and practical problem-solving.
+         That’s exactly how we approach roofing: clean geometry, watertight details, and engineer-worthy proposals.</p>
+      <p>We install
+        <a href="/gaf-shingle-roofing/">GAF architectural shingles</a>,
+        <a href="/metal-roofing/">standing seam &amp; classic rib metal</a>, and
+        <a href="/flat-roofing/">PVC/TPO low-slope membranes</a> for homes, multi-family, and light commercial.</p>
+      <p><strong>Call/Text:</strong> <a href="tel:3343327799">334-332-7799</a> • <strong>Email:</strong> <a href="mailto:caldwbr@gmail.com">caldwbr@gmail.com</a></p>
+    </section>
+
+    <section>
+      <h2>Service Scope in Huntsville</h2>
+      <p><strong>Due to distance, we accept larger projects only</strong> in the Huntsville area—e.g., full reroofs, standing seam metal, PVC/TPO low-slope, multi-family, or commercial scopes. If you’re unsure whether your project qualifies, reach out and we’ll review plans/photos and advise quickly.</p>
+    </section>
+
+    <section>
+      <h2>What We Do</h2>
+      <ul>
+        <li><strong>Full replacements</strong> — Timberline HDZ shingles, true standing seam metal, or PVC for low-slope sections.</li>
+        <li><strong>Complex details</strong> — valleys, sidewalls, chimneys/crickets, transitions, and dead-valley redesigns.</li>
+        <li><strong>Low-slope done right</strong> — tapered insulation for drainage, hot-air welded seams, clean scuppers/outlets.</li>
+        <li><strong>Documentation</strong> — photo reports and line-item scopes that make budgeting and approvals simple.</li>
+      </ul>
+      <p><strong>Project review → <a href="tel:3343327799">334-332-7799</a></strong></p>
+    </section>
+
+    <section>
+      <h2>Why Caldwell’s</h2>
+      <ul>
+        <li><strong>Licensed &amp; accountable:</strong> Alabama License #24152.</li>
+        <li><strong>Detail-driven installs:</strong> straight courses, proper edge metals, and correct flashing geometry.</li>
+        <li><strong>System fit to your roof:</strong> shingle/metal/PVC chosen by pitch, use-case, and lifecycle—not upsells.</li>
+        <li><strong>Clear communication:</strong> scopes and schedules you can actually plan around.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Representative Projects (Gallery)</h2>
+      <div class="grid-container gallery">
+        <figure>
+          <img src="../images/finishedCulver.jpg" class="landscape" alt="PVC porch roof edge and corner detailing">
+          <figcaption>PVC low-slope with crisp edge metals</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/royTPOGAF.jpg" class="landscape" alt="Architectural shingles with low-slope tie-in">
+          <figcaption>Architectural shingles with low-slope tie-in</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/tOpelikePVC2.jpg" class="landscape" alt="White PVC low-slope membrane example">
+          <figcaption>White PVC membrane—clean terminations and drains</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/niceTPOGroveHill.jpg" class="landscape" alt="TPO low-slope with tidy transitions">
+          <figcaption>TPO low-slope with tidy transitions</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <p><strong>Have plans, photos, or a scope?</strong> Send them over—we’ll give you straight numbers and timeline:
+        <a href="tel:3343327799">334-332-7799</a> • <a href="mailto:caldwbr@gmail.com">caldwbr@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer partial -->
+  <div id="footer"></div>
+  <script>
+    fetch('/footer.html')
+      .then(r => r.text())
+      .then(html => { document.getElementById('footer').innerHTML = html; })
+      .catch(err => console.error('Footer load error:', err));
+  </script>
+
+  <!-- JSON-LD (HQ in Auburn; page targeted to Huntsville; large-project note lives in body copy) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RoofingContractor",
+    "name": "Caldwell's Roofing",
+    "areaServed": "Huntsville, Alabama",
+    "url": "https://caldwells-roofing.com/roofing-huntsville-al/",
+    "telephone": "+13343327799",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Auburn",
+      "addressRegion": "AL",
+      "addressCountry": "US"
+    },
+    "license": "24152"
+  }
+  </script>
+</body>
+</html>

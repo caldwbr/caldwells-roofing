@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L60F0V6E0R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-L60F0V6E0R');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Roofing in Beauregard, AL — reroofs, repairs, standing seam metal, and PVC/TPO flat roofs by Caldwell's Roofing. Licensed, detail-driven installs for Lee County." />
+  <title>Roofing Beauregard, AL – Caldwell's Roofing</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+  <!-- Header partial -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(res => res.text())
+      .then(html => { document.getElementById("header-placeholder").innerHTML = html; });
+  </script>
+
+  <!-- Hero (local/representative project image) -->
+  <div class="hero-image" style="background-image: url('../images/roofMineBeauregard.jpg');"></div>
+
+  <main>
+    <section>
+      <h1>Roofing in Beauregard, AL</h1>
+      <p><strong>Beauregard</strong> roofs take the full hit of heat, storms, and pine needles off County Road corridors. We install
+        <a href="/gaf-shingle-roofing/">GAF architectural shingles</a>,
+        <a href="/metal-roofing/">standing seam &amp; classic rib metal</a>, and
+        <a href="/flat-roofing/">PVC/TPO low-slope membranes</a> with clean geometry and watertight flashing.</p>
+      <p><strong>Call/Text:</strong> <a href="tel:3343327799">334-332-7799</a> • <strong>Email:</strong> <a href="mailto:caldwbr@gmail.com">caldwbr@gmail.com</a></p>
+    </section>
+
+    <section>
+      <h2>What We Do in Beauregard</h2>
+      <ul>
+        <li><strong>Full replacements</strong> — Timberline HDZ shingles, true standing seam metal, or PVC for low-slope sections.</li>
+        <li><strong>Repairs &amp; leak tracing</strong> — valleys, sidewalls, chimneys/crickets, pipe boots, skylights, and transitions.</li>
+        <li><strong>Low-slope done right</strong> — tapered insulation for drainage, hot-air welded seams, clean scuppers/outlets.</li>
+        <li><strong>Storm response</strong> — temporary dry-in, photo documentation, and line-item estimates for claims.</li>
+      </ul>
+      <p><strong>No-pressure inspection → <a href="tel:3343327799">334-332-7799</a></strong></p>
+    </section>
+
+    <section>
+      <h2>Why Caldwell’s</h2>
+      <ul>
+        <li><strong>Licensed &amp; local:</strong> Alabama License #24152. Daily work across Auburn/Opelika, Beauregard, and Lee County.</li>
+        <li><strong>Detail-obsessed installs:</strong> correct valley geometry, sidewall/chimney flashing, crisp edges, tidy sites.</li>
+        <li><strong>Clear scopes:</strong> photo reports + line items so you know exactly what’s included.</li>
+        <li><strong>System fit to your roof:</strong> shingle/metal/PVC chosen by pitch and use-case—not upsells.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Beauregard Area Projects (Gallery)</h2>
+      <div class="grid-container gallery">
+        <figure>
+          <img src="../images/royTPOGAF.jpg" class="landscape" alt="Architectural shingles with low-slope tie-in">
+          <figcaption>Architectural shingles with low-slope tie-in</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/tOpelikePVC2.jpg" class="landscape" alt="White PVC membrane with clean terminations">
+          <figcaption>White PVC membrane—clean terminations and drains</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/roofMineBeauregard.jpg" class="landscape" alt="GAF Shingle Roof">
+          <figcaption>GAF Shingle Roof Installed in Beauregard, AL</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Neighborhoods &amp; Roads We Serve</h2>
+      <p>We work throughout the <em>Beauregard</em> community along <em>Lee Road 38/146/400</em>, <em>US-280 corridor</em>, toward <em>Opelika</em> and <em>Loachapoka</em>.</p>
+    </section>
+
+    <section>
+      <p><strong>Ready for straight numbers?</strong> Call <a href="tel:3343327799">334-332-7799</a> or email <a href="mailto:caldwbr@gmail.com">caldwbr@gmail.com</a>.</p>
+    </section>
+  </main>
+
+  <!-- Footer partial -->
+  <div id="footer"></div>
+  <script>
+    fetch('/footer.html')
+      .then(r => r.text())
+      .then(html => { document.getElementById('footer').innerHTML = html; })
+      .catch(err => console.error('Footer load error:', err));
+  </script>
+
+  <!-- JSON-LD (HQ in Auburn; page targeted to Beauregard) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RoofingContractor",
+    "name": "Caldwell's Roofing",
+    "areaServed": "Beauregard, Alabama",
+    "url": "https://caldwells-roofing.com/roofing-beauregard-al/",
+    "telephone": "+13343327799",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Auburn",
+      "addressRegion": "AL",
+      "addressCountry": "US"
+    },
+    "license": "24152"
+  }
+  </script>
+</body>
+</html>

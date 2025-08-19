@@ -312,4 +312,204 @@ main figure.wide-formula img {
 }
 
 
+/* ========== Footer Links Grid ========== */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 18px;
+  max-width: 1100px;
+  margin: 0 auto 10px;   /* centers & adds a bit of space above the copyright line */
+}
+
+.footer-links a {
+  color: #ffffff; /* white links */
+  text-decoration: none;
+  font-size: 0.95em;
+  line-height: 1.8;
+  padding: 4px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 9999px; /* pill shape */
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.05s ease;
+}
+
+.footer-links a:hover {
+  background: #ffcc00; /* gold background on hover */
+  color: #003366; /* dark blue text on hover */
+  border-color: #ffcc00;
+}
+
+
+.footer-links a:active { transform: translateY(1px); }
+
+.footer-bottom {
+  font-size: 0.85em;
+  opacity: 0.9;
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  .footer-links { gap: 6px 10px; }
+  .footer-links a { font-size: 0.9em; padding: 4px 10px; }
+}
+
+/* Make the three grid items feel equal and tighten the form on desktop */
+.grid-container form h2 {
+  margin: 0 0 0.25em 0;
+}
+
+/* Desktop layout: labels + inputs share a row (cuts form height ~in half) */
+@media (min-width: 768px) {
+  .grid-container form {
+    grid-template-columns: 1fr 1fr;  /* two columns */
+    align-items: center;
+  }
+  /* Title spans full width to prevent awkward mid-line breaks */
+  .grid-container form h2 {
+    grid-column: 1 / -1;
+  }
+  /* Put label and its input on the same row (no more label spanning both cols) */
+  .grid-container form label {
+    grid-column: auto;         /* column 1 */
+    margin-top: 0.4em;
+  }
+  .grid-container form input,
+  .grid-container form select {
+    grid-column: auto;         /* column 2 */
+  }
+  /* Big elements should span across both columns */
+  .grid-container form textarea,
+  .grid-container form button {
+    grid-column: 1 / -1;
+  }
+}
+
+/* OPTIONAL: if your form still feels taller than the images on some screens,
+   cap its height and allow internal scrolling. Uncomment if you want this. */
+/*
+.grid-container form {
+  max-height: 520px;
+  overflow: auto;
+}
+*/
+
+
+/* --- Chamber Referral Layout --- */
+.referral-wrap {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr; /* copy | form */
+  gap: 2rem;
+  align-items: start;
+  margin-block: 2.5rem 3rem;
+}
+
+@media (max-width: 900px) {
+  .referral-wrap { grid-template-columns: 1fr; }
+}
+
+/* Tighten headings so they don't break early */
+h1, h2, h3, .tight {
+  hyphens: auto;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Copy column */
+.referral-copy ul.benefits {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+}
+.referral-copy ul.benefits li {
+  margin: 0.4rem 0;
+}
+
+/* Card form */
+.referral-card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+.referral-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+/* Form rows */
+.form-row { margin-bottom: 0.9rem; }
+.form-row label {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+.referral-card input[type="text"],
+.referral-card input[type="tel"],
+.referral-card input[type="email"],
+.referral-card textarea {
+  width: 100%;
+  border: 1px solid #d2d6dc;
+  border-radius: 10px;
+  padding: 0.65rem 0.8rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+  background: #fafafa;
+}
+
+.referral-card textarea { resize: vertical; }
+
+.referral-card input:focus,
+.referral-card textarea:focus {
+  border-color: #7aa2ff;
+  box-shadow: 0 0 0 3px rgba(122,162,255,0.2);
+  background: #fff;
+}
+
+/* Button */
+.btn-primary {
+  display: inline-block;
+  border: 0;
+  background: #0f62fe;   /* readable blue; change to your brand color */
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 80ms ease, box-shadow 120ms ease;
+}
+.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 8px 16px rgba(0,0,0,0.12); }
+.btn-primary:active { transform: translateY(0); box-shadow: none; }
+
+.tiny-note {
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+/* Optional: make images in your .gallery not dwarf the form */
+.gallery .diagram {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+/* make widths include padding + border so 100% really means 100% */
+.referral-card, .referral-card * { box-sizing: border-box; }
+
+/* belt-and-suspenders: prevent any tiny overflow */
+.referral-card { overflow: hidden; }
+
+/* Special narrow hero for sagging shingles blog post */
+.hero-image-narrow {
+  max-width: 480px;     /* keep it comfortably sized */
+  height: 250px;        /* adjust height to suit */
+  margin: 0 auto;       /* center it horizontally */
+  border-radius: 8px;   /* optional, looks polished */
+  background-size: cover;
+  background-position: center;
+}
 

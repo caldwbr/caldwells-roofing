@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L60F0V6E0R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-L60F0V6E0R');
+  </script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Roofing in LaGrange, GA — shingle, standing seam metal, and PVC/TPO flat roofs by Caldwell's Roofing. Licensed, detail-driven installs with Southern grit."/>
+  <title>Roofing LaGrange, GA – Caldwell's Roofing</title>
+  <link rel="stylesheet" href="../styles.css"/>
+</head>
+<body>
+  <!-- Header partial -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(r => r.text())
+      .then(html => { document.getElementById("header-placeholder").innerHTML = html; });
+  </script>
+
+  <!-- Hero -->
+  <div class="hero-image" style="background-image: url('../images/overviewInspection.JPG');"></div>
+
+  <main>
+    <section>
+      <h1>Roofing in LaGrange, GA</h1>
+      <p><strong>LaGrange</strong>—where Southern hospitality meets solid industry. We bring that same blend of precision and resilience to every roof: clean installs, watertight details, and proposals that make sense.</p>
+      <p>We install <a href="/gaf-shingle-roofing/">GAF shingles</a>, <a href="/metal-roofing/">standing seam &amp; classic rib metal</a>, and <a href="/flat-roofing/">PVC/TPO membranes</a> with a craftsman’s touch—even though your roof might be miles from home.</p>
+      <p><strong>Call/Text:</strong> <a href="tel:3343327799">334-332-7799</a> • <strong>Email:</strong> <a href="mailto:caldwbr@gmail.com">caldwbr@gmail.com</a></p>
+    </section>
+
+    <section>
+      <h2>What We Do in LaGrange</h2>
+      <ul>
+        <li><strong>Full reroofs</strong>: shingles, metal, or PVC—picked for pitch and performance.</li>
+        <li><strong>Precision repairs</strong>: valleys, chimneys, transitions, leak tracing.</li>
+        <li><strong>Low-slope installs</strong>: welded seams, drainage prep, clean terminations.</li>
+        <li><strong>Small commercial & residential</strong>: not small mobile jobs—just solid work upwind of home.</li>
+      </ul>
+      <p><strong>No-pressure inspection → <a href="tel:3343327799">334-332-7799</a></strong></p>
+    </section>
+
+    <section>
+      <h2>Clients Appreciate:</h2>
+      <ul>
+        <li><strong>Licensed & accountable:</strong> Alabama License #24152, but our work speaks in Georgia too.</li>
+        <li><strong>Clean geometry:</strong> straight lines, crisp edges, detailed flashings.</li>
+        <li><strong>Transparent bidding:</strong> photos and line-item scopes—plus BAAR (budget as a roof) clarity.</li>
+        <li><strong>Roofing with backbone:</strong> materials and methods chosen for life-long performance.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Representative Work (Gallery)</h2>
+      <div class="grid-container gallery">
+        <figure>
+          <img src="../images/laGrange1.jpg" class="landscape" alt="Architectural shingles tie-in with low-slope membrane and metal LaGrange GA">
+          <figcaption>Porch PVC Cavity</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/laGrange2.jpg" class="landscape" alt="Architectural shingles tie-in with low-slope membrane and metal LaGrange GA">
+          <figcaption>Standing Seam Metal and GAF Shingles, LaGrange, GA</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/laGrange3.jpg" class="landscape" alt="LaGrange Shingle and Metal and PVC Roof">
+          <figcaption>Shingle, Metal and Flat Roof Project in LaGrange, GA</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <p><strong>Ready to talk pricing and timelines?</strong> Call <a href="tel:3343327799">334-332-7799</a> or email <a href="mailto:caldwbr@gmail.com">caldwbr@gmail.com</a>.</p>
+      <p><em>Servicing LaGrange, GA, and surrounding neighborhoods—Callaway Hills, Long Cane Creek, Auburn-Lagrange International Speedway corridor.</em></p>
+    </section>
+  </main>
+
+  <!-- Footer partial -->
+  <div id="footer"></div>
+  <script>
+    fetch('/footer.html')
+      .then(r => r.text())
+      .then(html => document.getElementById('footer').innerHTML = html)
+      .catch(err => console.error('Footer load error:', err));
+  </script>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"RoofingContractor",
+    "name":"Caldwell's Roofing",
+    "areaServed":"LaGrange, Georgia",
+    "url":"https://caldwells-roofing.com/roofing-lagrange-ga/",
+    "telephone":"+13343327799",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Auburn",
+      "addressRegion":"AL",
+      "addressCountry":"US"
+    },
+    "license":"24152"
+  }
+  </script>
+</body>
+</html>

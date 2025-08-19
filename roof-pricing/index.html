@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L60F0V6E0R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-L60F0V6E0R');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caldwell's Roofing – Roof Pricing</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <style>
+    /*
+      This CSS is for the table styling. You can add it directly to your styles.css file
+      or keep it here in the head section.
+    */
+    .price-table-container {
+      overflow-x: auto;
+      margin: 2rem 0;
+    }
+    .price-table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+    }
+    .price-table th, .price-table td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    .price-table th {
+      background-color: #333;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .price-table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    .price-table tr:hover {
+      background-color: #e9e9e9;
+    }
+    .price-table td:nth-child(2) {
+      font-family: monospace;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("header-placeholder").innerHTML = html;
+      });
+  </script>
+  <div class="hero-image" style="background-image: url('../images/handdrawn.jpg');"></div>
+
+
+  <main>
+    <h1>Roof Pricing & Services</h1>
+    <p>
+      At Caldwell's Roofing, we believe in transparency. This page provides a clear breakdown of our
+      pricing for various roofing materials and services. Most prices are estimates based on square
+      footage (s.f.) and can vary depending on the complexity of your project, existing roof
+      condition, and other factors. Please contact us for a detailed and accurate quote.
+    </p>
+
+    <h2>Roofing Material & Service Price Guide</h2>
+    <div class="price-table-container">
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th>Service / Material</th>
+            <th>Pricing Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Shingles (3-Tab)</td>
+            <td>$3.50/s.f. (reroof) / $2.50-$3.00/s.f. (new roof)</td>
+          </tr>
+          <tr>
+            <td>Shingles (Dimensional)</td>
+            <td>$3.85/s.f. (reroof) / $2.85-$3.25/s.f. (new roof)</td>
+          </tr>
+          <tr>
+            <td>Metal (Classic Rib)</td>
+            <td>$7.00-$9.00/s.f.</td>
+          </tr>
+          <tr>
+            <td>Metal (Standing Seam Snap-Lok)</td>
+            <td>$10.00-$13.00/s.f.</td>
+          </tr>
+          <tr>
+            <td>Metal (Standing Seam Robot-Seamed)</td>
+            <td>$18.00-$22.00/s.f.</td>
+          </tr>
+          <tr>
+            <td>Metal (Specialty/Curved/Swoop)</td>
+            <td>$25.00-$40.00/s.f.</td>
+          </tr>
+          <tr>
+            <td>Flat (PVC/TPO Membrane Only)</td>
+            <td>$10.00-$12.00+/s.f.</td>
+          </tr>
+          <tr>
+            <td>Flat (PVC/TPO 2 Layers 2" ISO + Membrane)</td>
+            <td>$20.00/s.f.</td>
+          </tr>
+          <tr>
+            <td>Synthetic Slate</td>
+            <td>$18.00-$22.00/s.f.</td>
+          </tr>
+          <tr>
+            <td>Real Slate</td>
+            <td>$20.00-$30.00/s.f.</td>
+          </tr>
+          <tr>
+            <td>Cedar Shakes</td>
+            <td>$8.00-$16.00+/s.f.</td>
+          </tr>
+          <tr>
+            <td>Copper (Specialty/Swoop/Barrel Double-Lock)</td>
+            <td>$40.00-$50.00/s.f.</td>
+          </tr>
+          <tr>
+            <td>Copper (Specialty/Swoop/Barrel Riveted Caps)</td>
+            <td>$30.00-$40.00/s.f.</td>
+          </tr>
+          <tr>
+            <td>Roof Polyurethane Coating</td>
+            <td>$12.50/s.f.</td>
+          </tr>
+          <tr>
+            <td>Velux Skylight (20" x 40") Replacement</td>
+            <td>$1,000 - $2,000+</td>
+          </tr>
+          <tr>
+            <td>Velux Skylight (20" x 40") New Install</td>
+            <td>$3,000 - $4,000 (includes sheetrock & framing)</td>
+          </tr>
+          <tr>
+            <td>Roof Inspection Report</td>
+            <td>~$150</td>
+          </tr>
+          <tr>
+            <td>Leak Troubleshooting & Repair</td>
+            <td>$150 - $1,500 (dependent on repair extent)</td>
+          </tr>
+          <tr>
+            <td>Hail Damage Assessment</td>
+            <td>Free</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      For insurance claims related to hail, wind, or storm damage, the cost of your roof is
+      often covered by your policy, minus your deductible. It's important to understand the
+      difference between **Actual-Cash Value (ACV)** and **Replacement Cost Value (RCV)** policies,
+      as ACV policies depreciate the value of your aged roof, while RCV policies will cover
+      the full cost once the project is complete. We can help you navigate this process.
+    </p>
+    <p>
+      <strong>Note on Materials:</strong> We use high-quality materials from trusted manufacturers
+      like GAF, IB Roof Systems, and McElroy Metal to ensure the longevity and durability of your new roof.
+    </p>
+
+    ---
+
+    <h2>Why These Prices?</h2>
+    <p>
+      Our pricing reflects the **quality of materials, expert craftsmanship, and the complexity** of the
+      job. For example, installing a standard 3-tab shingle roof is less labor-intensive than a
+      standing seam metal roof, which requires custom fabrication, precise hand-seaming, and extensive
+      flashing work. The wide price range for specialty materials like copper and real slate
+      reflects the significant difference in labor and material costs associated with these
+      premium options.
+    </p>
+    <p>
+      We stand behind our work and are committed to providing a roof that will protect your
+      home for years to come.
+    </p>
+
+    ---
+
+    <h2>Get a Detailed & Free Estimate</h2>
+    <p>
+      Ready for a precise quote? The best way to get an accurate price is to have us perform a
+      thorough, on-site assessment of your roofing project. We'll evaluate your roof's condition,
+      discuss your material preferences, and provide a detailed estimate with no obligation.
+    </p>
+    <p>
+      Fill out the form below or call us today to get started!
+    </p>
+    
+    <div class="grid-container">
+<form action="https://formspree.io/f/mqalgrdd" method="POST">
+  <h2>Contact Us for a Free Estimate</h2>
+
+  <label for="name">Your Name*</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Your Email*</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="phone">Phone</label>
+  <input type="tel" id="phone" name="phone">
+
+  <label for="address">Street Address*</label>
+  <input type="text" id="address" name="address" required>
+
+  <label for="city">City*</label>
+  <input type="text" id="city" name="city" required>
+
+  <label for="service">Service*</label>
+  <select id="service" name="service" required>
+    <option value="">--Select--</option>
+    <option value="shingle_hdz">Shingle – GAF Timberline HDZ</option>
+    <option value="shingle_3tab">Shingle – Royal Sovereign 3-tab</option>
+    <option value="metal_standing">Metal – Standing Seam</option>
+    <option value="metal_classic">Metal – Classic/Low Rib</option>
+    <option value="flat_pvc">Flat Roof – PVC</option>
+    <option value="flat_tpo">Flat Roof – TPO</option>
+    <option value="slate_real">Slate – Real</option>
+    <option value="slate_synthetic">Slate – Synthetic</option>
+    <option value="skylight_repair">Skylight / Repair</option>
+    <option value="other">Other</option>
+  </select>
+
+  <label for="description">Brief Description*</label>
+  <textarea id="description" name="description" rows="4" required></textarea>
+
+  <input type="hidden" name="_subject" value="New Roofing Quote Request">
+  <button type="submit">Request Quote</button>
+</form>
+
+    </div>
+  </main>
+  
+  <div id="footer"></div>
+  <script>
+    fetch('/footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer').innerHTML = html;
+      })
+      .catch(err => console.error('Footer load error:', err));
+  </script>
+</body>
+</html>

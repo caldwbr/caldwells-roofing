@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L60F0V6E0R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-L60F0V6E0R');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Caldwell's Roofing – Auburn, AL</title>
+  <title>Need a New Roof? Call Caldwell's Roofing – Auburn, AL</title>
   <link rel="stylesheet" href="styles.css" />
   <!-- Favicons -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -23,7 +32,7 @@
   <div class="hero-image"></div>
 
   <main>
-    <h1>Welcome to Caldwell’s Roofing!</h1>
+    <h1>Need a New Roof? Call Caldwell’s Roofing - Auburn, AL!</h1>
     <p>Serving Auburn, AL since 2008, we provide the following services:</p>
     <ul>
       <li>Shingles (GAF Timberline HDZ dimensional / GAF Royal Sovereign 3-tab)</li>
@@ -34,13 +43,15 @@
     </ul>
     <p>Trained in GAF, IB Roof (PVC flat roofs), and McElroy Metal materials, and with SRCA (Slate Roofing Contractors Association), we hold an Alabama home builder’s license (#24152), which equips us to handle large and small roofing projects, as well as worker’s comp and general liability insurance.</p>
     <p><strong>Call now:</strong> <a href="tel:3343327799">334.332.7799</a></p>
-    
-    <h2>Why Call Us?</h2>
+    <h2>Why Call Us for Your New Roof?</h2>
 <ul>
-  <li>Nearly two decades of roofing experience — we know what works</li>
-  <li>Locally owned and operated — you deal directly with us</li>
-  <li>We take pride in delivering quality installs, not excuses or shortcuts</li>
-  <li>Fast start times and efficient project completion</li>
+  <li>So it doesn't leak! Many leading roofers in Auburn do not stand behind their work.</li>
+  <li>We have gone above and beyond, traveling for training classes in specialty subtrades like flat and metal roofs.</li>
+  <li>Nearly two decades of roofing experience — we know what works and what doesn't.</li>
+  <li>Locally owned and operated — you deal directly with us.</li>
+  <li>We take pride in delivering quality installs, not excuses or shortcuts.</li>
+  <li>Fast start times and efficient project completion.</li>
+  <li>Competitive pricing.</li>
 </ul>
     
     <div class="grid-container">
@@ -49,12 +60,13 @@
         <figcaption>Why Use Caldwell's Roofing</figcaption>
       </figure>
       <figure>
-        <img src="/images/hardhatCTA.jpg" class="square" alt="Contact Caldwells Roofing">
+        <img src="/images/betterHardhat.jpg" class="square" alt="Contact Caldwells Roofing">
         <figcaption>Call Us Now!</figcaption>
       </figure>
       
-      <form action="https://formspree.io/f/mqalgrdd" method="POST">
-  
+<form action="https://formspree.io/f/mqalgrdd" method="POST">
+  <h2>Contact Us for a Free Estimate</h2>
+
   <label for="name">Your Name*</label>
   <input type="text" id="name" name="name" required>
 
@@ -69,9 +81,6 @@
 
   <label for="city">City*</label>
   <input type="text" id="city" name="city" required>
-
-  <label for="zip">ZIP*</label>
-  <input type="text" id="zip" name="zip" required>
 
   <label for="service">Service*</label>
   <select id="service" name="service" required>
@@ -89,13 +98,12 @@
   </select>
 
   <label for="description">Brief Description*</label>
-  <textarea id="description" name="description" rows="5" required></textarea>
+  <textarea id="description" name="description" rows="4" required></textarea>
 
-  <!-- Optional: sets email subject line -->
   <input type="hidden" name="_subject" value="New Roofing Quote Request">
-
   <button type="submit">Request Quote</button>
 </form>
+
 
     </div>
     
@@ -135,8 +143,8 @@
         <figcaption>Robot Seaming Maxima Panel (McElroy Metal)</figcaption>
       </figure>
       <figure>
-        <img src="/images/ruckerBoss2.jpg" class="landscape" alt="Fort Rucker Boss Roof">
-        <figcaption>One of The Two Bosses on Fort Rucker McElroy Metal Roof Recover</figcaption>
+        <img src="/images/ruckerBoss2.jpg" class="landscape" alt="Need a New Roof? Call Caldwells Roofing">
+        <figcaption>New Roof for a Gym/Daycare</figcaption>
       </figure>
       <figure>
         <img src="/images/copperSwoop.jpg" class="landscape" alt="Copper Roofing Swoop Cary Woods Auburn AL">
@@ -369,8 +377,15 @@
     <h2>Company Profile</h2>
     <p>Caldwell’s Roofing has been in business 17 years (since 2008). Past clients include government entities A-Vet Roofing (gym/daycare roof recover at Fort Rucker involving some steel framing as well as robot-seamed metal) and DTI (flat-lock copper at GWC Museum in Tuskegee, AL); contractors Dilworth Development (repairs or specialty installs), Tucker Brown Properties, The Infiniti Group, and Conner Brothers; and hundreds of individual homeowners and property owners. Experience includes training and installation of PVC, TPO, metal, slate, copper, and asphalt shingles; successful negotiation of missed scope items in insurance claims; and performance of several insurance claim reroofs. A <a href="https://firebasestorage.googleapis.com/v0/b/caldwells-roofing.firebasestorage.app/o/Profile_Caldwell_Contracting%20.pdf?alt=media&token=20ba9965-56b5-4fa5-b1a5-ccc8273b4050">full company profile</a> is also provided, particularly aimed toward government job bids.</p>
   </main>
-  <footer>
-    &copy; 2025 Caldwell's Roofing | Auburn, AL | License #24152
-  </footer>
+  <div id="footer"></div>
+  <script>
+    fetch('/footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer').innerHTML = html;
+      })
+      .catch(err => console.error('Footer load error:', err));
+  </script>
+
 </body>
 </html>
