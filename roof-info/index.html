@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L60F0V6E0R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L60F0V6E0R');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roof Info – Caldwell's Roofing</title>
+  <meta name="description" content="Quick links to Caldwell’s Roofing resources: pricing, inspections in Auburn–Opelika, insurance claims, roof cleaning, and shingle colors." />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="canonical" href="https://caldwells-roofing.com/roof-info/">
+</head>
+<body>
+  <!-- Header -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(res => res.text())
+      .then(html => { document.getElementById("header-placeholder").innerHTML = html; })
+      .catch(err => console.error("Header load error:", err));
+  </script>
+
+  <!-- Hero -->
+  <div class="hero-image" style="background-image: url('../images/dimensional.jpg');"></div>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Roof Info</h1>
+    <p>Fast links to roof information:</p>
+    <ol>
+      <li>
+        <a href="/roof-pricing/">Roof Pricing</a>
+        <p>How we estimate reroofs, materials, and typical ranges for Auburn–Opelika projects.</p>
+      </li>
+      <li>
+        <a href="/roof-inspection-auburn-opelika/">Roof Inspection – Auburn / Opelika</a>
+        <p>Local inspections, leak diagnostics, photos, and written reports for homes and businesses.</p>
+      </li>
+      <li>
+        <a href="/roof-insurance-claims-hail-wind-storm-fire/">Insurance Claims: Hail • Wind • Storm • Fire</a>
+        <p>Step-by-step help with adjusters, documentation, and getting your roof covered properly.</p>
+      </li>
+      <li>
+        <a href="/roof-cleaning/">Roof Cleaning</a>
+        <p>Soft-wash vs. pressure, degranulation cautions, and keeping warranties intact.</p>
+      </li>
+      <li>
+        <a href="/roof-colors/">Roof Colors</a>
+        <p>Popular shingle palettes and metal/PVC color options that look great in our climate.</p>
+      </li>
+    </ol>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+  <script>
+    fetch("/footer.html")
+      .then(response => response.text())
+      .then(html => { document.getElementById("footer").innerHTML = html; })
+      .catch(err => console.error("Footer load error:", err));
+  </script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L60F0V6E0R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-L60F0V6E0R');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roof Colors: Shingle, Metal & IB PVC – Caldwell's Roofing</title>
+  <meta name="description" content="Pick roofing colors by material and brand. See shingle, metal, and IB PVC color charts. Defaults to GAF Architectural shingle colors for quick viewing." />
+  <link rel="canonical" href="https://caldwells-roofing.com/roof-colors/"/>
+
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <style>
+    .picker-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: .8rem;
+      align-items: end;
+      margin: 1rem 0 1.25rem;
+    }
+    .picker {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: .8rem;
+    }
+    .picker label { display:block; font-weight:700; margin-bottom:.45rem; }
+    .picker select {
+      width:100%; padding:.5rem .6rem; border:1px solid #bbb; border-radius:6px; font:inherit; background:#fff;
+    }
+    .hidden { display:none !important; }
+
+    #colorResult figure { margin:0; padding:0; }
+    #colorResult img {
+      width:100%; height:auto; display:block; border-radius:8px; border:1px solid #e5e5e5;
+    }
+    #placeholderNote {
+      background:#f7f7f9; border-left:4px solid #ccc; border-radius:6px;
+      padding:.9rem 1rem; margin-top:.6rem; font-size:.95rem; color:#444;
+    }
+    @media (max-width: 900px) { .picker-row { grid-template-columns:1fr; } }
+
+    /* small helper for the notes block */
+    .brand-notes { margin-top:1.2rem; }
+    .brand-notes h2 { margin-top:1.2rem; }
+    .brand-notes ul { margin-top:.4rem; }
+  </style>
+</head>
+<body>
+  <!-- Header include -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(res => res.text())
+      .then(html => { document.getElementById("header-placeholder").innerHTML = html; });
+  </script>
+
+  <!-- Hero -->
+  <div class="hero-image" style="background-image: url('../images/truckGAFcolorSampleBoards.jpg');"></div>
+
+  <main>
+    <h1>Roof Colors: Shingle, Metal &amp; IB PVC</h1>
+    <p>Use the selectors below to pick your roof material and brand. We’ll show a large color chart or example image. It <em>defaults</em> to <strong>Asphalt Shingles → Architectural → GAF</strong> so you can instantly see a popular set (Weathered Wood, Charcoal, Pewter Gray, Barkwood, etc.).</p>
+
+    <div class="picker-row">
+      <!-- Column 1: Material -->
+      <div class="picker">
+        <label for="material">Material</label>
+        <select id="material" aria-label="Roofing material">
+          <option value="asphalt">Asphalt Shingles</option>
+          <option value="metal">Metal</option>
+          <option value="pvc">IB PVC</option>
+        </select>
+      </div>
+
+      <!-- Column 2: Type (for asphalt) OR Supplier (for metal) -->
+      <div class="picker" id="asphaltTypeWrap">
+        <label for="asphaltType">Shingle Type</label>
+        <select id="asphaltType" aria-label="Shingle type">
+          <option value="3-tab">3-Tab</option>
+          <option value="architectural" selected>Architectural (Dimensional)</option>
+        </select>
+      </div>
+
+      <div class="picker hidden" id="metalSupplierWrap">
+        <label for="metalSupplier">Metal Supplier</label>
+        <select id="metalSupplier" aria-label="Metal supplier">
+          <option value="ae">A&amp;E Metal</option>
+          <option value="alsteel">AL Steel (Montgomery)</option>
+          <option value="mcelroy">McElroy Metal</option>
+        </select>
+      </div>
+
+      <!-- Column 3: Brand (only for asphalt) -->
+      <div class="picker" id="asphaltBrandWrap">
+        <label for="asphaltBrand">Brand</label>
+        <select id="asphaltBrand" aria-label="Asphalt shingle brand">
+          <option value="GAF" selected>GAF</option>
+          <option value="Tamko">Tamko</option>
+          <option value="Owens Corning">Owens Corning</option>
+          <option value="CertainTeed">CertainTeed</option>
+          <option value="IKO">IKO</option>
+          <option value="Atlas">Atlas</option>
+          <option value="Malarkey">Malarkey</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Result image / chart -->
+    <div id="colorResult" class="grid-container gallery">
+      <figure>
+        <img id="resultImage"
+             src="../images/gafShingleColors.png"
+             alt="GAF Architectural shingle color chart"
+             loading="lazy" width="1400" height="900">
+        <figcaption id="resultCaption">GAF Timberline HDZ® Architectural colors (example chart).</figcaption>
+      </figure>
+    </div>
+
+    <div id="placeholderNote" class="hidden">
+      We’re preparing the color chart for this selection. Ask us for physical samples, or call
+      <a href="tel:3343327799">334-332-7799</a> and we’ll bring boards to your home.
+    </div>
+
+    <h2>Get Samples / Pricing</h2>
+    <p>Call or text <strong><a href="tel:3343327799">334.332.7799</a></strong>. We’ll bring sample boards, verify ventilation/underlayments, and provide a firm quote. <em>Screens lie—always confirm with physical samples on your roof in your lighting.</em></p>
+
+    <!-- SEO / brand notes -->
+    <section class="brand-notes">
+      <h2>Popular Shingle Lines We’re Asked About</h2>
+      <p>This page helps homeowners compare color families across common product lines in the Auburn–Opelika market.</p>
+      <h3>GAF</h3>
+      <ul>
+        <li><strong>Timberline HDZ®</strong> (architectural/dimensional; the best-selling shingle in North America)</li>
+        <li><strong>Royal Sovereign</strong> (3-tab; long-standing economy line)</li>
+        <li><em>Note:</em> GAF also produces premium “designer” lines (Grand Canyon, Slateline, etc.), but most homeowners compare Timberline HDZ and Royal Sovereign first when shopping Opelika-Auburn roofing.</li>
+      </ul>
+
+      <h3>IKO</h3>
+      <ul>
+        <li><strong>Cambridge</strong> (architectural/dimensional)</li>
+        <li><strong>Dynasty</strong> (architectural; larger nailing zone)</li>
+        <li><strong>Marathon Plus AR</strong> (3-tab)</li>
+      </ul>
+
+      <h3>Atlas</h3>
+      <ul>
+        <li><strong>Pinnacle Pristine</strong> (architectural; Scotchgard algae protection)</li>
+        <li><strong>StormMaster Shake</strong> / <strong>StormMaster Slate</strong> (polymer-modified architectural)</li>
+        <li><em>Note:</em> We haven’t found a current Atlas 3-tab line. Past names included “GlassMaster” / “ToughGlass,” but they appear to be discontinued in many markets.</li>
+      </ul>
+
+      <h3>Owens Corning</h3>
+      <ul>
+        <li><strong>Duration</strong> family (architectural)</li>
+        <li><strong>Supreme</strong> (3-tab)</li>
+      </ul>
+
+      <h3>CertainTeed</h3>
+      <ul>
+        <li><strong>Landmark</strong> (architectural)</li>
+        <li><strong>XT25 / CT20</strong> (3-tab)</li>
+      </ul>
+
+      <h3>Tamko</h3>
+      <ul>
+        <li><strong>Heritage</strong> (architectural)</li>
+        <li><strong>Elite Glass-Seal</strong> (3-tab)</li>
+      </ul>
+
+      <h3>Malarkey</h3>
+      <ul>
+        <li><strong>Vista</strong> / <strong>Highlander AR</strong> (architectural)</li>
+        <li><strong>Legacy</strong> (architectural; SBS-modified)</li>
+        <li><strong>Windsor</strong> (premium thick-profile—similar “high-relief” aesthetic to GAF Grand Canyon-style designer looks)</li>
+      </ul>
+
+      <p>If you’re trying to match a specific line or color (e.g., “Cambridge Dual Black,” “Dynasty Glacier,” “Landmark Weathered Wood”), call us and we’ll bring real samples so you can verify tones on your roof, in your light.</p>
+    </section>
+  </main>
+
+  <!-- Footer include -->
+  <div id="footer"></div>
+  <script>
+    fetch('/footer.html')
+      .then(r => r.text())
+      .then(html => { document.getElementById('footer').innerHTML = html; })
+      .catch(err => console.error('Footer load error:', err));
+  </script>
+
+  <script>
+    // ---------- Image map (Designer removed) ----------
+    const IMAGE_MAP = {
+      asphalt: {
+        '3-tab': {
+          'GAF': '../images/gaf-3tab-colors.jpg',
+          'Tamko': '../images/tamko-3tab-colors.jpg',
+          'Owens Corning': '../images/oc-3tab-colors.jpg',
+          'CertainTeed': '../images/certainteed-3tab-colors.jpg',
+          'IKO': '../images/iko-3tab-colors.jpg',
+          // 'Atlas': (no current 3-tab; intentionally omitted)
+          'Malarkey': '../images/malarkey-3tab-colors.jpg'
+        },
+        'architectural': {
+          'GAF': '../images/gafShingleColors.png',   // known-good default
+          'Tamko': '../images/tamko-arch-colors.jpg',
+          'Owens Corning': '../images/oc-arch-colors.jpg',
+          'CertainTeed': '../images/certainteed-arch-colors.jpg',
+          'IKO': '../images/iko-arch-colors.jpg',
+          'Atlas': '../images/atlas-arch-colors.jpg',
+          'Malarkey': '../images/malarkey-arch-colors.jpg'
+        }
+      },
+      metal: {
+        'ae': '../images/metal-ae-color-chart.jpg',
+        'alsteel': '../images/metal-alsteel-color-chart.jpg',
+        'mcelroy': '../images/metal-mcelroy-color-chart.jpg'
+      },
+      pvc: '../images/ib-pvc-color-chart.jpg'
+    };
+
+    const materialSel = document.getElementById('material');
+    const asphaltTypeWrap = document.getElementById('asphaltTypeWrap');
+    const asphaltTypeSel = document.getElementById('asphaltType');
+    const asphaltBrandWrap = document.getElementById('asphaltBrandWrap');
+    const asphaltBrandSel = document.getElementById('asphaltBrand');
+
+    const metalSupplierWrap = document.getElementById('metalSupplierWrap');
+    const metalSupplierSel = document.getElementById('metalSupplier');
+
+    const imgEl = document.getElementById('resultImage');
+    const capEl = document.getElementById('resultCaption');
+    const placeholder = document.getElementById('placeholderNote');
+
+    function showPlaceholder(msg) {
+      imgEl.classList.add('hidden');
+      placeholder.classList.remove('hidden');
+      placeholder.textContent = msg || 'Color chart not available yet. Call 334-332-7799 for physical samples.';
+      capEl.textContent = '';
+    }
+    function showImage(src, caption, alt) {
+      imgEl.classList.remove('hidden');
+      placeholder.classList.add('hidden');
+      imgEl.alt = alt || caption || 'Roof color chart';
+      capEl.textContent = caption || '';
+      imgEl.src = src + (src.includes('?') ? '&' : '?') + 'v=' + Date.now(); // cache-bust
+    }
+    function loadOrPlaceholder(src, caption, alt) {
+      if (!src) { showPlaceholder(); return; }
+      const probe = new Image();
+      probe.onload  = () => showImage(src, caption, alt);
+      probe.onerror = () => showPlaceholder('Color chart not found. Check filename/path & case (.JPG vs .jpg).');
+      probe.src = src + (src.includes('?') ? '&' : '?') + 'ping=' + Date.now();
+    }
+
+    // Dynamically filter brands: hide Atlas for 3-tab; restore for Architectural
+    const ALL_BRANDS = ['GAF','Tamko','Owens Corning','CertainTeed','IKO','Atlas','Malarkey'];
+    function repopulateBrandOptions() {
+      const type = asphaltTypeSel.value; // '3-tab' | 'architectural'
+      const allowed = (type === '3-tab')
+        ? ALL_BRANDS.filter(b => b !== 'Atlas')  // Atlas removed for 3-tab
+        : ALL_BRANDS.slice();                    // all for Architectural
+
+      const current = asphaltBrandSel.value;
+      asphaltBrandSel.innerHTML = ''; // clear
+      for (const b of allowed) {
+        const opt = document.createElement('option');
+        opt.value = b; opt.textContent = b;
+        asphaltBrandSel.appendChild(opt);
+      }
+      // Keep current if still allowed; otherwise default to first item
+      if (!allowed.includes(current)) {
+        asphaltBrandSel.value = 'GAF';
+      } else {
+        asphaltBrandSel.value = current;
+      }
+    }
+
+    function updateVisibility() {
+      const mat = materialSel.value;
+      if (mat === 'asphalt') {
+        asphaltTypeWrap.classList.remove('hidden');
+        asphaltBrandWrap.classList.remove('hidden');
+        metalSupplierWrap.classList.add('hidden');
+      } else if (mat === 'metal') {
+        asphaltTypeWrap.classList.add('hidden');
+        asphaltBrandWrap.classList.add('hidden');
+        metalSupplierWrap.classList.remove('hidden');
+      } else { // pvc
+        asphaltTypeWrap.classList.add('hidden');
+        asphaltBrandWrap.classList.add('hidden');
+        metalSupplierWrap.classList.add('hidden');
+      }
+    }
+
+    function updateImage() {
+      const mat = materialSel.value;
+
+      if (mat === 'asphalt') {
+        const t = asphaltTypeSel.value;   // '3-tab' | 'architectural'
+        const b = asphaltBrandSel.value;  // brand
+        const path = IMAGE_MAP.asphalt?.[t]?.[b];
+        const label = (t === 'architectural') ? 'Architectural' : '3-Tab';
+        const caption = `${b} ${label} shingle colors (example chart)`;
+        loadOrPlaceholder(path, caption, `${b} ${label} shingle color chart`);
+        return;
+      }
+
+      if (mat === 'metal') {
+        const sup = metalSupplierSel.value;
+        const path = IMAGE_MAP.metal[sup];
+        const label = sup === 'ae' ? 'A&E Metal' : sup === 'alsteel' ? 'AL Steel (Montgomery)' : 'McElroy Metal';
+        loadOrPlaceholder(path, `${label} metal color chart`, `${label} metal color chart`);
+        return;
+      }
+
+      // pvc
+      const pvcPath = typeof IMAGE_MAP.pvc === 'string' ? IMAGE_MAP.pvc : null;
+      loadOrPlaceholder(pvcPath, 'IB PVC membrane color chart', 'IB PVC membrane color chart');
+    }
+
+    function resetDefaults() {
+      materialSel.value = 'asphalt';
+      asphaltTypeSel.value = 'architectural';
+      repopulateBrandOptions();
+      asphaltBrandSel.value = 'GAF';
+      metalSupplierSel.value = 'ae';
+    }
+
+    // Listeners
+    materialSel.addEventListener('change', () => {
+      if (materialSel.value === 'asphalt') {
+        repopulateBrandOptions();
+      } else if (materialSel.value === 'metal') {
+        metalSupplierSel.value = 'ae';
+      }
+      updateVisibility();
+      updateImage();
+    });
+    asphaltTypeSel.addEventListener('change', () => {
+      repopulateBrandOptions();
+      updateImage();
+    });
+    asphaltBrandSel.addEventListener('change', updateImage);
+    metalSupplierSel.addEventListener('change', updateImage);
+
+    // Init
+    document.addEventListener('DOMContentLoaded', () => {
+      resetDefaults();
+      updateVisibility();
+      updateImage();
+    });
+  </script>
+
+  <!-- LocalBusiness JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"RoofingContractor",
+    "name":"Caldwell's Roofing",
+    "url":"https://caldwells-roofing.com/",
+    "telephone":"+1-334-332-7799",
+    "areaServed":"Auburn, Opelika, and surrounding Alabama communities",
+    "serviceType":["Shingle Roofing","Metal Roofing","IB PVC Flat Roofing"]
+  }
+  </script>
+</body>
+</html>

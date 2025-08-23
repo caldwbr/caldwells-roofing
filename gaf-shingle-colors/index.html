@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L60F0V6E0R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L60F0V6E0R');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GAF Shingle Colors – Caldwell's Roofing</title>
+  <meta name="description" content="See popular GAF shingle color options and request free on-roof samples. Caldwell’s Roofing installs GAF shingle roofs in Auburn, Opelika, and the surrounding area." />
+  <link rel="canonical" href="https://caldwells-roofing.com/gaf-shingle-colors/"/>
+
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <style>
+    /* Optional: light styling for swatch grid if you add individual color tiles */
+    .swatch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1rem;
+      align-items: start;
+    }
+    .swatch-card {
+      border: 1px solid #e3e3e3;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .swatch-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      display: block;
+    }
+    .swatch-card .label {
+      padding: .65rem .8rem;
+      font-weight: 600;
+      font-size: .95rem;
+    }
+    .note {
+      font-size: .95rem;
+      color: #444;
+      background: #f7f7f7;
+      border-left: 4px solid #ccc;
+      padding: .9rem 1rem;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header include -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(res => res.text())
+      .then(html => { document.getElementById("header-placeholder").innerHTML = html; });
+  </script>
+
+  <!-- Hero (replace image path with your file) -->
+  <!-- e.g., ../images/gaf-color-chart.jpg or ../images/gaf-shingle-colors-hero.jpg -->
+  <div class="hero-image" style="background-image: url('../images/truckGAFcolorSampleBoards.jpg');"></div>
+
+  <main>
+    <h1>GAF Shingle Colors</h1>
+    <p>Choosing a color is the fun part. We install GAF shingles every week, and we’re happy to bring real samples to your roof so you can see them in your lighting. Below is a quick color chart to get ideas started.</p>
+
+    <div class="note">
+      <strong>Heads-up:</strong> Screens lie. Lighting, roof pitch, and surrounding colors all change how a shingle looks. Always confirm with a physical sample before ordering.
+    </div>
+
+    <!-- Big color chart image -->
+    <div class="grid-container gallery" style="margin-top:1rem;">
+      <figure>
+        <!-- Replace this path with your “half-ass image” filename -->
+        <img class="diagram" src="../images/gafShingleColors.png" alt="GAF shingle color chart" loading="lazy" width="1200" height="800">
+        <figcaption>Representative GAF shingle color families. Ask us for in-person samples.</figcaption>
+      </figure>
+    </div>
+
+    <!-- Optional individual swatches (add files as you get them). 
+         Duplicate a .swatch-card block per color and update src + label. -->
+    <!--
+    <h2>Popular Colors We Keep On Hand</h2>
+    <div class="swatch-grid">
+      <div class="swatch-card">
+        <img src="../images/gaf-swatches/charcoal.jpg" alt="GAF Charcoal shingle" loading="lazy">
+        <div class="label">Charcoal</div>
+      </div>
+      <div class="swatch-card">
+        <img src="../images/gaf-swatches/weathered-wood.jpg" alt="GAF Weathered Wood shingle" loading="lazy">
+        <div class="label">Weathered Wood</div>
+      </div>
+      <div class="swatch-card">
+        <img src="../images/gaf-swatches/shakewood.jpg" alt="GAF Shakewood shingle" loading="lazy">
+        <div class="label">Shakewood</div>
+      </div>
+      <div class="swatch-card">
+        <img src="../images/gaf-swatches/slate.jpg" alt="GAF Slate shingle" loading="lazy">
+        <div class="label">Slate</div>
+      </div>
+    </div>
+    -->
+
+    <h2>Get Samples / Pricing</h2>
+    <p>Call or text <strong><a href="tel:3343327799">334.332.7799</a></strong> and we’ll bring sample boards to your home, confirm ventilation and underlayments, and give you a firm quote.</p>
+    <p><a class="button" href="/contact.html">Request Samples</a></p>
+  </main>
+
+  <!-- Footer include -->
+  <div id="footer"></div>
+  <script>
+    fetch('/footer.html')
+      .then(r => r.text())
+      .then(html => { document.getElementById('footer').innerHTML = html; })
+      .catch(err => console.error('Footer load error:', err));
+  </script>
+
+  <!-- LocalBusiness JSON-LD (helps SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RoofingContractor",
+    "name": "Caldwell's Roofing",
+    "url": "https://caldwells-roofing.com/",
+    "areaServed": "Auburn AL and surrounding",
+    "telephone": "+1-334-332-7799",
+    "serviceType": "GAF Shingle Roofing",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "GAF Shingle Colors",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "GAF Shingle (various colors)" } }
+      ]
+    }
+  }
+  </script>
+</body>
+</html>
