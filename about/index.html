@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L60F0V6E0R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L60F0V6E0R');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About Caldwell's Roofing — Auburn & Opelika roofing contractor specializing in standing seam metal, architectural shingles, and PVC/TPO flat roofing with tapered insulation and clean details." />
+  <title>About Caldwell’s Roofing – Auburn &amp; Opelika Roofing Contractor</title>
+
+  <link rel="canonical" href="https://caldwells-roofing.com/about/" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+  <!-- Header partial -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(res => res.text())
+      .then(html => { document.getElementById("header-placeholder").innerHTML = html; });
+  </script>
+
+  <!-- Hero -->
+  <div class="hero-image" style="background-image:url('/images/overviewInspection.JPG');">
+    <span class="visually-hidden">Caldwell’s Roofing team inspecting a roof in Auburn</span>
+  </div>
+
+  <main>
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+      <a href="/">Home</a> › <span>About</span>
+    </nav>
+
+    <section>
+      <h1>About Caldwell’s Roofing</h1>
+      <p><strong>Caldwell’s Roofing</strong> is an Auburn–Opelika roofing contractor focused on clean geometry,
+        watertight detailing, and long-life systems. We install <a href="/metal-roofing/">standing seam &amp; classic rib metal</a>,
+        <a href="/gaf-shingle-roofing/">architectural/designer shingles</a>, and
+        <a href="/flat-roofing/">PVC/TPO membranes</a> with tapered insulation, custom edge metals, and crisp terminations.</p>
+      <p><strong>Owner:</strong> Brad Caldwell • <strong>Alabama License:</strong> #24152</p>
+      <p><strong>Call/Text:</strong> <a href="tel:3343327799">334-332-7799</a> •
+         <strong>Email:</strong> <a href="mailto:caldwbr@gmail.com">caldwbr@gmail.com</a></p>
+    </section>
+
+    <section>
+      <h2>What We’re Known For</h2>
+      <ul>
+        <li><strong>Detail-obsessed installs:</strong> straight courses, proper valleys/sidewalls/chimney flashings, sealed fasteners.</li>
+        <li><strong>Low-slope done right:</strong> tapered insulation for drainage, heat-welded seams, clean scuppers &amp; drains.</li>
+        <li><strong>Metal expertise:</strong> true standing seam (mechanical/snap-lock), classic rib, and curved metal applications.</li>
+        <li><strong>Clear scopes &amp; photos:</strong> line-item estimates with before/after documentation.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Service Area</h2>
+      <p>Regular work across <em>Auburn</em>, <em>Opelika</em>, <em>Grand National</em>, <em>Oak Bowery</em>, <em>Beauregard</em>,
+         <em>Waverly</em>, <em>Loachapoka</em>, plus Lee, Russell, Macon, and Tallapoosa Counties.</p>
+    </section>
+
+    <section>
+      <h2>Systems &amp; Materials</h2>
+      <ul>
+        <li><strong>Shingles:</strong> architectural &amp; designer profiles with proper underlayments and ventilation.</li>
+        <li><strong>Metal:</strong> standing seam (mechanically seamed and snap-lock), classic rib/ag panels, custom edge metals.</li>
+        <li><strong>Flat roofs:</strong> PVC/TPO membranes, tapered insulation plans, term bars, edge terminations, scuppers/outlets.</li>
+        <li><strong>Accessories:</strong> skylights, pipe boots, crickets, wall flashings, and transitions.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Insurance &amp; Licensing</h2>
+      <p>We maintain required Alabama licensing and insurance for roofing work. License #24152. Certificates available upon request.</p>
+    </section>
+
+    <section>
+      <h2>Let’s Talk</h2>
+      <p><strong>No-pressure inspection.</strong> Call <a href="tel:3343327799">334-332-7799</a> or email
+        <a href="mailto:caldwbr@gmail.com">caldwbr@gmail.com</a>. We’ll propose the right system for your roof geometry and budget.</p>
+    </section>
+  </main>
+
+  <!-- Footer partial -->
+  <div id="footer"></div>
+  <script>
+    fetch('/footer.html')
+      .then(r => r.text())
+      .then(html => { document.getElementById('footer').innerHTML = html; })
+      .catch(err => console.error('Footer load error:', err));
+  </script>
+
+  <!-- JSON-LD: RoofingContractor + BreadcrumbList + FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "RoofingContractor",
+        "@id": "https://caldwells-roofing.com/#contractor",
+        "name": "Caldwell's Roofing",
+        "url": "https://caldwells-roofing.com/about/",
+        "telephone": "+13343327799",
+        "email": "caldwbr@gmail.com",
+        "areaServed": [
+          "Auburn, Alabama", "Opelika, Alabama", "Lee County, Alabama",
+          "Russell County, Alabama", "Macon County, Alabama", "Tallapoosa County, Alabama"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Auburn",
+          "addressRegion": "AL",
+          "addressCountry": "US"
+        },
+        "founder": "Brad Caldwell",
+        "license": "24152",
+        "sameAs": [
+          "https://maps.app.goo.gl/uW1FWq6qbBNzg7mD9",
+          "https://www.yelp.com/biz/caldwells-roofing-auburn-2",
+          "https://www.facebook.com/CaldwellsRoofing/",
+          "https://www.youtube.com/@Caldwells-Roofing",
+          "https://www.instagram.com/caldwellsroofing/"
+        ],
+        "image": "https://caldwells-roofing.com/images/overviewInspection.JPG",
+        "logo": "https://caldwells-roofing.com/favicon-32x32.png"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caldwells-roofing.com/" },
+          { "@type": "ListItem", "position": 2, "name": "About", "item": "https://caldwells-roofing.com/about/" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you install true standing seam metal?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. We install mechanical and snap-lock standing seam systems with proper clips, underlayments, and seaming practices. Curved applications available." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you handle low-slope sections correctly?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. We design tapered insulation for drainage, heat-weld seams on PVC/TPO, and finish with clean scuppers or drains." }
+          },
+          {
+            "@type": "Question",
+            "name": "What areas do you serve?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Primarily Auburn–Opelika and the surrounding Lee, Russell, Macon, and Tallapoosa Counties." }
+          },
+          {
+            "@type": "Question",
+            "name": "Are you licensed and insured?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Alabama License #24152; insurance certificates are available upon request." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<!-- JSON-LD (About Page: Caldwell's Roofing) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Caldwell's Roofing",
+    "url": "https://caldwells-roofing.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://caldwells-roofing.com/favicon-32x32.png"
+    },
+    "image": "https://caldwells-roofing.com/images/overviewInspection.JPG",
+    "description": "Caldwell's Roofing Auburn and Opelika is a licensed and detail-driven roofing contractor based in Auburn, Alabama. We specialize in reroofs, standing seam metal, designer shingles, and PVC/TPO flat roof systems. Local, trusted, and focused on precision workmanship across East Alabama.",
+    "telephone": "+13343327799",
+    "email": "caldwbr@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Auburn, AL",
+      "addressLocality": "Auburn",
+      "addressRegion": "AL",
+      "postalCode": "36830",
+      "addressCountry": "US"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Brad Caldwell"
+    },
+    "areaServed": [
+      "Auburn, Alabama",
+      "Opelika, Alabama",
+      "Lee County, Alabama",
+      "Russell County, Alabama",
+      "Macon County, Alabama"
+    ],
+    "license": "Alabama License #24152",
+    "sameAs": [
+      "https://maps.app.goo.gl/uW1FWq6qbBNzg7mD9",
+      "https://www.yelp.com/biz/caldwells-roofing-auburn-2",
+      "https://www.facebook.com/CaldwellsRoofing/",
+      "https://www.youtube.com/@Caldwells-Roofing",
+      "https://www.instagram.com/caldwellsroofing/"
+    ]
+  },
+  "url": "https://caldwells-roofing.com/about/",
+  "name": "About Caldwell's Roofing"
+}
+</script>
+
+</body>
+</html>

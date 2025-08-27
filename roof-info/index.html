@@ -70,5 +70,43 @@
       .then(html => { document.getElementById("footer").innerHTML = html; })
       .catch(err => console.error("Footer load error:", err));
   </script>
+<!-- JSON-LD (WebPage: Roof Info) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Roof Info",
+  "url": "https://caldwells-roofing.com/roof-info/",
+  "description": "Caldwell's Roofing Auburn and Opelika provides roof information resources, covering shingles, metal, flat roofing, ventilation, and maintenance. Educational content to help homeowners and property managers make informed decisions.",
+  "image": [
+    "https://caldwells-roofing.com/images/overviewInspection.JPG"
+  ],
+  "publisher": {
+    "@type": "RoofingContractor",
+    "name": "Caldwell's Roofing Auburn and Opelika",
+    "url": "https://caldwells-roofing.com/",
+    "telephone": "+13343327799",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Auburn",
+      "addressRegion": "AL",
+      "addressCountry": "US"
+    },
+    "license": "24152",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://caldwells-roofing.com/favicon-32x32.png"
+    },
+    "sameAs": [
+      "https://maps.app.goo.gl/uW1FWq6qbBNzg7mD9",
+      "https://www.yelp.com/biz/caldwells-roofing-auburn-2",
+      "https://www.facebook.com/CaldwellsRoofing/",
+      "https://www.youtube.com/@Caldwells-Roofing",
+      "https://www.instagram.com/caldwellsroofing/"
+    ]
+  }
+}
+</script>
+
 </body>
 </html>

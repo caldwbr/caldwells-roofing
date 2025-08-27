@@ -132,39 +132,70 @@
     fetch('/footer.html').then(r=>r.text()).then(html=>{ document.getElementById('footer').innerHTML = html; });
   </script>
 
-  <!-- JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Service",
-    "name":"Commercial Flat Roof Inspection",
-    "serviceType":"Roof Inspection",
-    "provider":{
-      "@type":"RoofingContractor",
-      "name":"Caldwell's Roofing",
-      "telephone":"+13343327799",
-      "address":{"@type":"PostalAddress","addressLocality":"Auburn","addressRegion":"AL","addressCountry":"US"},
-      "license":"24152",
-      "url":"https://caldwells-roofing.com/"
+<!-- JSON-LD (Service: Commercial Flat Roof Inspection) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Commercial Flat Roof Inspection",
+  "serviceType": "Roof Inspection",
+  "description": "Professional inspections of commercial flat roofs (PVC, TPO, EPDM, BUR, modified bitumen). Caldwell’s Roofing Auburn and Opelika provides photo documentation, moisture tracing, repair recommendations, and cost breakdowns for property managers and owners.",
+  "provider": {
+    "@type": "RoofingContractor",
+    "name": "Caldwell's Roofing Auburn and Opelika",
+    "telephone": "+13343327799",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Auburn",
+      "addressRegion": "AL",
+      "addressCountry": "US"
     },
-    "areaServed":["Auburn, AL","Opelika, AL","Lee County, AL","Columbus, GA"],
-    "offers":[
-      {
-        "@type":"UnitPriceSpecification",
-        "priceCurrency":"USD",
-        "price":0.25,
-        "unitText":"square foot",
-        "name":"Commercial Flat Roof Inspection (PVC/TPO/EPDM)"
+    "license": "24152",
+    "url": "https://caldwells-roofing.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://caldwells-roofing.com/favicon-32x32.png"
+    },
+    "sameAs": [
+      "https://maps.app.goo.gl/uW1FWq6qbBNzg7mD9",
+      "https://www.yelp.com/biz/caldwells-roofing-auburn-2",
+      "https://www.facebook.com/CaldwellsRoofing/",
+      "https://www.youtube.com/@Caldwells-Roofing",
+      "https://www.instagram.com/caldwellsroofing/"
+    ]
+  },
+  "areaServed": [
+    "Auburn, AL",
+    "Opelika, AL",
+    "Lee County, AL",
+    "Columbus, GA",
+    "Montgomery, AL",
+    "Phenix City, AL"
+  ],
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Commercial Flat Roof Inspection (PVC/TPO/EPDM/BUR)",
+      "priceCurrency": "USD",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "0.25",
+        "priceCurrency": "USD",
+        "unitText": "per square foot"
       },
-      {
-        "@type":"Offer",
-        "name":"Minimum Charge",
-        "priceCurrency":"USD",
-        "price":"150"
-      }
-    ],
-    "url":"https://caldwells-roofing.com/commercial-flat-roof-inspection/"
-  }
-  </script>
+      "description": "Detailed inspection with photos, moisture tracing, and written condition report."
+    },
+    {
+      "@type": "Offer",
+      "name": "Minimum Inspection Charge",
+      "priceCurrency": "USD",
+      "price": "150",
+      "description": "Flat minimum for small commercial roofs or partial inspections."
+    }
+  ],
+  "url": "https://caldwells-roofing.com/commercial-flat-roof-inspection/"
+}
+</script>
+
 </body>
 </html>

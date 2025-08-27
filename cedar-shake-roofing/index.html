@@ -134,38 +134,61 @@
       .catch(err => console.error('Footer load error:', err));
   </script>
 
-  <!-- JSON-LD (Service) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Cedar Shake Roofing",
-    "serviceType": "Cedar Shake Roofing",
-    "provider": {
-      "@type": "RoofingContractor",
-      "name": "Caldwell's Roofing",
-      "telephone": "+13343327799",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Auburn",
-        "addressRegion": "AL",
-        "addressCountry": "US"
-      },
-      "license": "24152"
+<!-- JSON-LD (Service: Cedar Shake Roofing) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Cedar Shake Roofing",
+  "serviceType": "Roof Installation",
+  "description": "Premium cedar shake roofing installation by Caldwell's Roofing. Installed with breathable underlayment, stainless/copper fasteners, and precise detailing for durability and curb appeal.",
+  "provider": {
+    "@type": "RoofingContractor",
+    "name": "Caldwell's Roofing Auburn and Opelika",
+    "telephone": "+13343327799",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Auburn",
+      "addressRegion": "AL",
+      "addressCountry": "US"
     },
-    "areaServed": ["Auburn, AL", "Opelika, AL", "Dadeville, AL", "Montgomery, AL", "Columbus, GA"],
-    "offers": {
-      "@type": "Offer",
-      "priceSpecification": {
-        "@type": "UnitPriceSpecification",
-        "priceCurrency": "USD",
-        "price": "8-16",
-        "unitText": "USD per square foot"
-      },
-      "description": "Installed cedar shake roofing. Final price depends on grade, underlayment, fasteners, and roof complexity."
+    "license": "24152",
+    "url": "https://caldwells-roofing.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://caldwells-roofing.com/favicon-32x32.png"
     },
+    "sameAs": [
+      "https://maps.app.goo.gl/uW1FWq6qbBNzg7mD9",
+      "https://www.yelp.com/biz/caldwells-roofing-auburn-2",
+      "https://www.facebook.com/CaldwellsRoofing/",
+      "https://www.youtube.com/@Caldwells-Roofing",
+      "https://www.instagram.com/caldwellsroofing/"
+    ]
+  },
+  "areaServed": [
+    "Auburn, AL",
+    "Opelika, AL",
+    "Dadeville, AL",
+    "Montgomery, AL",
+    "Columbus, GA"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "name": "Cedar Shake Roofing Installation",
+    "priceCurrency": "USD",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "8-16",
+      "priceCurrency": "USD",
+      "unitText": "per square foot"
+    },
+    "description": "Installed cedar shake roofing. Pricing varies by cedar grade (hand-split vs. taper-sawn), underlayment system, copper/stainless fasteners, and roof complexity.",
     "url": "https://caldwells-roofing.com/cedar-shake-roofing/"
-  }
-  </script>
+  },
+  "url": "https://caldwells-roofing.com/cedar-shake-roofing/"
+}
+</script>
+
 </body>
 </html>

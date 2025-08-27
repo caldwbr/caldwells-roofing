@@ -126,24 +126,62 @@
       .catch(err => console.error('Footer load error:', err));
   </script>
 
-  <!-- LocalBusiness JSON-LD (helps SEO) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
+<!-- JSON-LD (Service: GAF Shingle Colors) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "GAF Shingle Colors",
+  "serviceType": "Roof Installation & Color Selection",
+  "description": "Explore the full range of GAF shingle colors with Caldwell's Roofing Auburn and Opelika. We provide real-world sample boards, on-site consultations, and expert advice to help you choose the right shingle style and color for your home.",
+  "image": [
+    "https://caldwells-roofing.com/images/truckGAFcolorSampleBoards.jpg"
+  ],
+  "provider": {
     "@type": "RoofingContractor",
-    "name": "Caldwell's Roofing",
+    "name": "Caldwell's Roofing Auburn and Opelika",
     "url": "https://caldwells-roofing.com/",
-    "areaServed": "Auburn AL and surrounding",
-    "telephone": "+1-334-332-7799",
-    "serviceType": "GAF Shingle Roofing",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "GAF Shingle Colors",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "GAF Shingle (various colors)" } }
-      ]
-    }
-  }
-  </script>
+    "telephone": "+13343327799",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Auburn",
+      "addressRegion": "AL",
+      "addressCountry": "US"
+    },
+    "license": "24152",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://caldwells-roofing.com/favicon-32x32.png"
+    },
+    "sameAs": [
+      "https://maps.app.goo.gl/uW1FWq6qbBNzg7mD9",
+      "https://www.yelp.com/biz/caldwells-roofing-auburn-2",
+      "https://www.facebook.com/CaldwellsRoofing/",
+      "https://www.youtube.com/@Caldwells-Roofing",
+      "https://www.instagram.com/caldwellsroofing/"
+    ]
+  },
+  "areaServed": [
+    "Auburn, AL",
+    "Opelika, AL",
+    "Lee County, AL",
+    "Montgomery, AL",
+    "Columbus, GA",
+    "Phenix City, AL",
+    "Lake Martin, AL"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "name": "GAF Shingle Color Consultation & Installation",
+    "priceCurrency": "USD",
+    "price": "0",
+    "availability": "https://schema.org/InStock",
+    "url": "https://caldwells-roofing.com/gaf-shingle-colors/",
+    "description": "Free color consultation with installation of GAF architectural or 3-tab shingles. Includes access to full color sample boards and digital mockups."
+  },
+  "url": "https://caldwells-roofing.com/gaf-shingle-colors/"
+}
+</script>
+
 </body>
 </html>

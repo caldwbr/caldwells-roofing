@@ -95,22 +95,65 @@
       .catch(err => console.error('Footer load error:', err));
   </script>
 
-  <!-- Optional: Service schema to help SEO for cleaners -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "name": "Caldwell's Roofing",
+<!-- JSON-LD (Service: Roof Cleaning & Exterior Washing) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Roof Cleaning and Exterior Pressure Washing",
+  "serviceType": [
+    "Roof Cleaning",
+    "House Exterior Pressure Washing",
+    "Driveway and Sidewalk Pressure Washing"
+  ],
+  "description": "Caldwell's Roofing Auburn and Opelika provides professional roof cleaning, house washing, and pressure washing services to remove algae, moss, dirt, and debris — extending the life and appearance of roofing and exterior surfaces.",
+  "image": [
+    "https://caldwells-roofing.com/images/pressure-washing.jpg"
+  ],
+  "provider": {
+    "@type": "RoofingContractor",
+    "name": "Caldwell's Roofing Auburn and Opelika",
+    "url": "https://caldwells-roofing.com/",
+    "telephone": "+13343327799",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Auburn",
+      "addressRegion": "AL",
+      "addressCountry": "US"
+    },
+    "license": "24152",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://caldwells-roofing.com/favicon-32x32.png"
+    },
+    "sameAs": [
+      "https://maps.app.goo.gl/uW1FWq6qbBNzg7mD9",
+      "https://www.yelp.com/biz/caldwells-roofing-auburn-2",
+      "https://www.facebook.com/CaldwellsRoofing/",
+      "https://www.youtube.com/@Caldwells-Roofing",
+      "https://www.instagram.com/caldwellsroofing/"
+    ]
+  },
+  "areaServed": [
+    "Auburn, AL",
+    "Opelika, AL",
+    "Lee County, AL",
+    "Montgomery, AL",
+    "Columbus, GA",
+    "Phenix City, AL"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "name": "Roof and Exterior Cleaning Services",
+    "priceCurrency": "USD",
+    "price": "0",
+    "availability": "https://schema.org/InStock",
     "url": "https://caldwells-roofing.com/roof-cleaning/",
-    "areaServed": "Auburn, Opelika, and surrounding Alabama communities",
-    "telephone": "+1-334-332-7799",
-    "serviceType": [
-      "Roof Cleaning",
-      "House Exterior Pressure Washing",
-      "Driveway and Sidewalk Pressure Washing"
-    ],
-    "image": "https://caldwells-roofing.com/images/pressure-washing.jpg"
-  }
-  </script>
+    "description": "Custom-quoted cleaning for roofs, siding, driveways, and exterior surfaces using safe, effective washing techniques."
+  },
+  "url": "https://caldwells-roofing.com/roof-cleaning/"
+}
+</script>
+
 </body>
 </html>

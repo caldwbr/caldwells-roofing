@@ -146,36 +146,55 @@
       .catch(err => console.error('Footer load error:', err));
   </script>
 
-  <!-- JSON-LD: Service/Offer -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Service",
-    "name":"Caldwell’s Superior-Grade Roof Audit",
-    "serviceType":"Roof Inspection",
-    "provider":{
-      "@type":"RoofingContractor",
-      "name":"Caldwell's Roofing",
-      "telephone":"+13343327799",
-      "address":{
-        "@type":"PostalAddress",
-        "addressLocality":"Auburn",
-        "addressRegion":"AL",
-        "addressCountry":"US"
-      },
-      "license":"24152",
-      "url":"https://caldwells-roofing.com/"
+<!-- JSON-LD: Service/Offer -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Caldwell’s Superior-Grade Roof Audit",
+  "serviceType": "Roof Inspection",
+  "description": "A premium roof inspection service by Caldwell's Roofing — full photo documentation, condition grading, and clear scope recommendations for shingles, metal, or low-slope systems.",
+  "provider": {
+    "@type": "RoofingContractor",
+    "name": "Caldwell's Roofing",
+    "telephone": "+13343327799",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Auburn",
+      "addressRegion": "AL",
+      "addressCountry": "US"
     },
-    "areaServed":["Auburn, AL","Opelika, AL","Lee County, AL"],
-    "offers":{
-      "@type":"Offer",
-      "name":"Superior-Grade Roof Audit",
-      "priceCurrency":"USD",
-      "price":"300",
-      "url":"https://caldwells-roofing.com/caldwells-superior-grade-roof-audit/"
+    "license": "24152",
+    "url": "https://caldwells-roofing.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://caldwells-roofing.com/favicon-32x32.png"
     },
-    "url":"https://caldwells-roofing.com/caldwells-superior-grade-roof-audit/"
-  }
-  </script>
+    "sameAs": [
+      "https://maps.app.goo.gl/uW1FWq6qbBNzg7mD9",
+      "https://www.yelp.com/biz/caldwells-roofing-auburn-2",
+      "https://www.facebook.com/CaldwellsRoofing/",
+      "https://www.youtube.com/@Caldwells-Roofing",
+      "https://www.instagram.com/caldwellsroofing/"
+    ]
+  },
+  "areaServed": [
+    "Auburn, AL",
+    "Opelika, AL",
+    "Lee County, AL",
+    "Russell County, AL",
+    "Macon County, AL"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "name": "Superior-Grade Roof Audit",
+    "priceCurrency": "USD",
+    "price": "300",
+    "url": "https://caldwells-roofing.com/caldwells-superior-grade-roof-audit/"
+  },
+  "url": "https://caldwells-roofing.com/caldwells-superior-grade-roof-audit/"
+}
+</script>
+
 </body>
 </html>
