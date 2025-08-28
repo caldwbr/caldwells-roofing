@@ -3,22 +3,19 @@
     "public": ".",
     "ignore": [
       "firebase.json",
-      "**/.*",               // hidden files
-      "**/.git/**",          // ignore Git internals
-      "**/node_modules/**",  // ignore dependencies if they exist
-      "**/*.mov"             // ignore raw .mov files (convert to .mp4 before deploying)
+      "**/.*",
+      "**/.git/**",
+      "**/node_modules/**",
+      "**/*.mov"
     ],
     "headers": [
       {
         "source": "**",
         "headers": [
-          {
-            "key": "X-Content-Type-Options",
-            "value": "nosniff"
-          },
+          { "key": "X-Content-Type-Options", "value": "nosniff" },
           {
             "key": "Content-Security-Policy",
-            "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.youtube.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-src 'self' https://www.youtube.com https://www.veluxusa.com; object-src 'self'; frame-ancestors 'self';"
+            "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.youtube.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-src 'self' https://www.youtube.com https://www.veluxusa.com https://www.google.com https://maps.google.com; img-src 'self' data: https://*.google.com https://*.gstatic.com;"
           }
         ]
       },
@@ -30,14 +27,8 @@
       }
     ],
     "rewrites": [
-      {
-        "source": "/header.html",
-        "destination": "/header.html"
-      },
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
+      { "source": "/header.html", "destination": "/header.html" },
+      { "source": "**", "destination": "/index.html" }
     ]
   }
 }

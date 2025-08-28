@@ -11,7 +11,8 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Caldwell's Roofing Posts</title>
+  <meta name="description" content="Caldwell’s Roofing posts from 2024 — tutorials, field notes, and project write-ups covering reroofs, standing seam, slate, and more." />
+  <title>Caldwell's Roofing Posts — 2024</title>
   <link rel="stylesheet" href="../styles.css" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -19,62 +20,47 @@
   <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
+  <!-- Header partial -->
   <div id="header-placeholder"></div>
   <script>
     fetch("/header.html")
       .then(res => res.text())
-      .then(html => {
-        document.getElementById("header-placeholder").innerHTML = html;
-      });
+      .then(html => { document.getElementById("header-placeholder").innerHTML = html; });
   </script>
 
-  <div class="hero-image" style="background-image: url('../images/dimensional.jpg');"></div>
+  <!-- Hero -->
+  <div class="hero-image" style="background-image: url('../images/overviewInspection.JPG');"></div>
 
   <main>
-    <h1>Caldwell’s Roofing Posts</h1>
-    <p>Browse by year:</p>
-    <ul>
-      <li><a href="/2025/">2025 Posts</a></li>
-      <li><a href="/2024/">2024 Posts</a></li>
-    </ul>
-
-    <h2>All Posts</h2>
+    <h1>Caldwell’s Roofing Posts — 2024</h1>
     <ol>
-      <li><a href="/2025/08/26/ordering-velux-skylights/">Ordering Velux Skylights</a></li>
-      <li><a href="/2025/08/18/sagging-or-falling-shingles/">Sagging or Falling Shingles</a></li>
-      <li><a href="/2025/08/18/why-gaf-not-tamko-owens-corning-certainteed-iko-atlas-malarkey/">Why GAF?</a></li>
-      <li><a href="/2025/08/08/replacing-screws-and-neoprene-washers-classic-low-rib-metal-roof/">Replacing Screws and Neoprene Washers on Classic Low-Rib Metal Roofs</a></li>
-      <li><a href="/2025/05/08/installing-flat-lock-copper-on-carver-museum-porches/">Installing Flat Lock Copper on Carver Museum Porches</a></li>
-      <li><a href="/2025/03/21/reroofing-the-paul-rudolph-applebee-home-with-ib-pvc/">Reroofing the Paul Rudolph Applebee Home with IB PVC</a></li>
-      <li><a href="/2025/03/21/roof-coatings/">Roof Coatings</a></li>
       <li><a href="/2024/01/29/slate-roofing-training-from-the-srca/">Slate Roofing Training from the SRCA</a></li>
       <li><a href="/2024/01/29/calibrate-and-maintain-a-roofing-brake/">Calibrate and Maintain a Roofing Brake</a></li>
-      <li><a href="/2024/01/28/how-to-measure-for-a-reroof/">How to Measure for a Reroof</a></li>
       <li><a href="/2024/01/28/installing-a-galvalume-standing-seam-metal-roof/">Installing a Galvalume Standing Seam Metal Roof</a></li>
-      <li><a href="/2024/01/28/a-big-roof-recover-job-at-fort-rucker/">A Big Roof Recover Job at Fort Rucker</a></li>
-      <li><a href="/2024/01/28/find-hip-and-ridge-cap-angles-for-metal-roofing/">Find Hip and Ridge Cap Angles for Metal Roofing</a></li>
+      <li><a href="/2024/01/28/how-to-measure-for-a-reroof/">How to Measure for a Reroof</a></li>
       <li><a href="/2024/01/28/how-to-install-a-curved-standing-seam-metal-roof/">How to Install a Curved Standing Seam Metal Roof</a></li>
-    </ol>  
+      <li><a href="/2024/01/28/find-hip-and-ridge-cap-angles-for-metal-roofing/">Find Hip and Ridge Cap Angles for Metal Roofing</a></li>
+      <li><a href="/2024/01/28/a-big-roof-recover-job-at-fort-rucker/">A Big Roof Recover Job at Fort Rucker</a></li>
+    </ol>
   </main>
 
+  <!-- Footer partial -->
   <div id="footer"></div>
   <script>
     fetch('/footer.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('footer').innerHTML = html;
-      })
+      .then(r => r.text())
+      .then(html => { document.getElementById('footer').innerHTML = html; })
       .catch(err => console.error('Footer load error:', err));
   </script>
 
-  <!-- JSON-LD (CollectionPage: Caldwell's Roofing Blog Posts) -->
+  <!-- JSON-LD (CollectionPage: Caldwell's Roofing Blog Posts — 2024) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Caldwell's Roofing Blog Posts",
-    "description": "Index of Caldwell's Roofing articles — covering reroofs, shingles, metal, PVC/TPO, copper, skylights, and expert roofing tips.",
-    "url": "https://caldwells-roofing.com/caldwells-roofing-posts/",
+    "name": "Caldwell's Roofing Blog Posts — 2024",
+    "description": "Index of Caldwell's Roofing articles from 2024.",
+    "url": "https://caldwells-roofing.com/2024/",
     "mainEntity": {
       "@type": "Blog",
       "name": "Caldwell's Roofing Blog",
@@ -83,10 +69,7 @@
         "@type": "Organization",
         "name": "Caldwell's Roofing Auburn and Opelika",
         "url": "https://caldwells-roofing.com/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://caldwells-roofing.com/favicon-32x32.png"
-        },
+        "logo": { "@type": "ImageObject", "url": "https://caldwells-roofing.com/favicon-32x32.png" },
         "sameAs": [
           "https://maps.app.goo.gl/uW1FWq6qbBNzg7mD9",
           "https://www.yelp.com/biz/caldwells-roofing-auburn-2",
