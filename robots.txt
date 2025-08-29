@@ -1,0 +1,11 @@
+# robots.txt for caldwells-roofing.com
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /drafts/
+Disallow: /cgi-bin/
+Disallow: /*?*    # keep parameter spam from getting crawled
+
+Sitemap: https://caldwells-roofing.com/sitemap.xml
