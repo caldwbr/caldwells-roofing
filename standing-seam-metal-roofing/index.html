@@ -3,6 +3,9 @@
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L60F0V6E0R"></script>
+  <script defer src="/assets/perf.js"></script>
+  <link rel="preload" as="image" href="../images/payneStGalvSS.jpg">
+
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -22,7 +25,8 @@
   <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-  <div id="header-placeholder"></div>
+  <div id="header-placeholder" style="min-height:130px"></div>
+
   <script>
     fetch("/header.html")
       .then(res => res.text())
@@ -43,16 +47,27 @@
             <h2>Example Gallery</h2>
     <div class="grid-container gallery">
       <figure>
-        <img src="../images/lakeMartinSS.jpg" alt="Lake Martin Dadeville AL Galvalume Standing Seam Roof">
+        <img
+  src="../images/lakeMartinSS.jpg"
+  alt="Lake Martin Dadeville AL Galvalume Standing Seam Roof"
+  loading="lazy" decoding="async"
+  style="aspect-ratio: 16 / 9; width:100%; height:auto; display:block;">
+
         <figcaption>Hail Damage Insurance Claim: Galvalume Standing Seam Roof + Wood Shake Upgrades</figcaption>
       </figure>
       <figure>
-        <img src="../images/greenSS.jpg" alt="Green Standing Seam Roof Auburn AL">
+        <img
+  src="../images/greenSS.jpg"
+  alt="Green Standing Seam Roof Auburn AL"
+  loading="lazy" decoding="async"
+  style="aspect-ratio: 16 / 9; width:100%; height:auto; display:block;">
+
         <figcaption>Green Standing Seam Roof Behind Auburn Art Museum</figcaption>
       </figure>
       <figure>
-        <video autoplay muted loop playsinline width="50%">
+        <video controls playsinline preload="none" width="100%">
           <source src="../videos/greenSSSmithStation.mp4" type="video/mp4" />
+
           Your browser does not support the video tag.
         </video>
         <figcaption>Green Snap-Lok Standing Seam Roof in Smith's Station AL</figcaption>

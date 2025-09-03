@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L60F0V6E0R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L60F0V6E0R');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>News & Press – Caldwell's Roofing</title>
+  <meta name="description" content="News and press from Caldwell’s Roofing serving Auburn & Opelika, Alabama." />
+  <link rel="canonical" href="https://caldwells-roofing.com/news/"/>
+
+  <!-- If this file is /news/index.html, use ../ for CSS -->
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+</head>
+<body>
+  <!-- Header include -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(r => r.text())
+      .then(html => { document.getElementById("header-placeholder").innerHTML = html; });
+  </script>
+
+  <!-- Hero (reuse a known image) -->
+  <div class="hero-image" style="background-image: url('../images/truckGAFcolorSampleBoards.jpg');"></div>
+
+  <main>
+    <h1>News &amp; Press</h1>
+    <p>Latest announcements and media items from Caldwell’s Roofing.</p>
+
+    <ul>
+      <li>
+        <a href="/press/caldwells-roofing-20-five-star-reviews/">
+          Press Release: Caldwell’s Roofing Reaches 20 Five-Star Google Reviews
+        </a>
+      </li>
+    </ul>
+  </main>
+
+  <!-- Footer include -->
+  <div id="footer"></div>
+  <script>
+    fetch('/footer.html')
+      .then(r => r.text())
+      .then(html => { document.getElementById('footer').innerHTML = html; })
+      .catch(err => console.error('Footer load error:', err));
+  </script>
+
+  <!-- JSON-LD: Breadcrumbs + ItemList of news items -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://caldwells-roofing.com/" },
+          { "@type": "ListItem", "position": 2, "name": "News", "item": "https://caldwells-roofing.com/news/" }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "name": "Caldwell's Roofing News",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://caldwells-roofing.com/press/caldwells-roofing-20-five-star-reviews/",
+            "name": "Press Release: Caldwell’s Roofing Reaches 20 Five-Star Google Reviews"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</body>
+</html>

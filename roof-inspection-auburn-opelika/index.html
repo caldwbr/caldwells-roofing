@@ -3,6 +3,8 @@
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L60F0V6E0R"></script>
+  <script defer src="/assets/perf.js"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -135,44 +137,40 @@
       .catch(err => console.error('Footer load error:', err));
   </script>
 
-  <!-- JSON-LD: Service with two offers (standard + free hail) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Service",
-    "name":"Roof Inspection (Auburn & Opelika)",
-    "serviceType":"Roof Inspection",
-    "provider":{
-      "@type":"RoofingContractor",
-      "name":"Caldwell's Roofing",
-      "telephone":"+13343327799",
-      "address":{
-        "@type":"PostalAddress",
-        "addressLocality":"Auburn",
-        "addressRegion":"AL",
-        "addressCountry":"US"
-      },
-      "license":"24152"
+<!-- Product: Roof Inspection (pairs with your existing Service block) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Product",
+  "name":"Roof Inspection (Auburn & Opelika)",
+  "description":"Standard roof inspection covering install quality, hail/wind damage, granule loss, slow leaks, flashing/edging, boots, ridge/hip caps, and low-slope misuse.",
+  "url":"https://caldwells-roofing.com/roof-inspection-auburn-opelika/",
+  "image":"https://caldwells-roofing.com/images/overviewInspection.JPG",
+  "brand":{"@type":"Brand","name":"Caldwell's Roofing"},
+  "sku":"svc-roof-inspection-150",
+  "areaServed":["Auburn, AL","Opelika, AL","Lee County, AL"],
+  "offers":[
+    {
+      "@type":"Offer",
+      "name":"Standard Roof Inspection",
+      "priceCurrency":"USD",
+      "price":"150",
+      "availability":"https://schema.org/InStock",
+      "url":"https://caldwells-roofing.com/roof-inspection-auburn-opelika/",
+      "seller":{"@id":"https://caldwells-roofing.com/#org"}
     },
-    "areaServed":["Auburn, AL","Opelika, AL","Lee County, AL"],
-    "offers":[
-      {
-        "@type":"Offer",
-        "name":"Standard Roof Inspection",
-        "priceCurrency":"USD",
-        "price":"150",
-        "url":"https://caldwells-roofing.com/roof-inspection-auburn-opelika/"
-      },
-      {
-        "@type":"Offer",
-        "name":"Hail Inspection & Estimate",
-        "priceCurrency":"USD",
-        "price":"0",
-        "url":"https://caldwells-roofing.com/roof-inspection-auburn-opelika/"
-      }
-    ],
-    "url":"https://caldwells-roofing.com/roof-inspection-auburn-opelika/"
-  }
-  </script>
+    {
+      "@type":"Offer",
+      "name":"Hail Inspection & Estimate",
+      "priceCurrency":"USD",
+      "price":"0",
+      "availability":"https://schema.org/InStock",
+      "url":"https://caldwells-roofing.com/roof-inspection-auburn-opelika/",
+      "seller":{"@id":"https://caldwells-roofing.com/#org"}
+    }
+  ]
+}
+</script>
+
 </body>
 </html>
