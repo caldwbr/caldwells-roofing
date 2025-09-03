@@ -82,3 +82,7 @@ node_modules/
 
 # dataconnect generated files
 .dataconnect
+
+/news/20-five-star-reviews/index.html
+
+firebase.json
