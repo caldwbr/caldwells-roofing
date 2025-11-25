@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L60F0V6E0R"></script>
+  <script defer src="/assets/perf.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-L60F0V6E0R');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calls Going Straight to Voicemail? Our 5-Year Telecom Case Study – Caldwell’s Roofing</title>
+  <meta name="description" content="For five years our business number ghosted customers—calls went straight to voicemail or vanished. Here’s the nerdy post-mortem, how we fixed it in 2025, and how you can self-audit your phones." />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="canonical" href="https://caldwells-roofing.com/news/ghosted-calls-case-study/"/>
+
+  <style>
+    .press-hero{background:linear-gradient(135deg,#0b3a75,#1557b0);color:#fff;text-align:center;padding:44px 16px}
+    .press-hero h1{margin:0 0 8px;font-size:2rem}
+    .press-hero p{margin:0;opacity:.95}
+    .wrap{max-width:1000px;margin:0 auto;padding:1.5rem}
+    .meta{color:#666;font-size:.95rem;margin-bottom:.75rem}
+    .note{background:#f7fbff;border:1px solid #e6eef8;padding:.9rem 1rem;border-radius:10px}
+    .box{background:#fafafa;border:1px solid #e7e7e7;border-radius:10px;padding:1rem;margin:1rem 0}
+    .badge{display:inline-block;background:#ffd24d;color:#222;font-weight:800;padding:.2rem .55rem;border-radius:9999px;font-size:.8rem;margin-left:.4rem}
+    h2{margin-top:1.4rem}
+    code{background:#f2f2f2;border:1px solid #e5e5e5;padding:.08rem .35rem;border-radius:4px}
+    .list-compact li{margin:.35rem 0}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("/header.html")
+      .then(r=>r.text())
+      .then(html=>{ document.getElementById("header-placeholder").innerHTML = html; });
+  </script>
+
+  <!-- Hero -->
+  <section class="press-hero">
+    <h1>Calls Going Straight to Voicemail? Our 5-Year Telecom Case Study <span class="badge">Lessons Learned</span></h1>
+    <p>A nerdy post-mortem on “ghosted” calls, mis-provisioning, and finally fixing it in 2025.</p>
+  </section>
+
+  <main class="wrap">
+    <div class="meta">Published: <time datetime="2025-09-02">September 2, 2025</time> • Auburn, Alabama</div>
+
+    <section class="box">
+      <strong>TL;DR:</strong> From 2020 to mid-2025, a hidden carrier-side issue made many inbound calls to our business line go <em>straight to voicemail</em>—but for a long stretch even voicemail was routed to an unused number, leaving no trace of the missed calls whatsoever. We initially didn’t realize it was telecom; we thought it was just a slow market. In summer 2025 we ported to Verizon and escalated until the line was fully re-provisioned. Calls immediately started ringing again like normal.
+    </section>
+
+    <section>
+      <h2>Symptoms (What Customers Told Us)</h2>
+      <ul class="list-compact">
+        <li><strong>“It never rang—went straight to voicemail.”</strong></li>
+        <li><strong>“I called and it rang then went to voicemail.”</strong></li>
+        <li><strong>"Why did you call?"</strong> (Some company I had not called- spoofing by someone else).</li>
+        <li>Long stretch of reroute of voicemail to unused number (I found the fake number they had routed it to).</li>
+      </ul>
+
+      <h2>Why We Missed It for So Long</h2>
+      <p>We didn’t initially suspect telecom. 2020–2021 brought market chaos, so a slower phone felt plausible. Also, a silent failure is sneaky: there’s no “missed call” count to clue you in. If analytics or routing treat your number poorly, calls can be diverted pre-ring or dropped before your handset ever sees them.</p>
+
+      <h2>What Likely Happened (Nerd Mode)</h2>
+      <p>Think of the call path as: <em>originating carrier → transit → terminating carrier (your provider) → features (forward/no-answer/voicemail) → handset</em>. If the terminating carrier has bad provisioning or a stale feature toggle, two ugly outcomes are common:</p>
+      <ol>
+        <li><strong>Pre-ring diversion:</strong> The call is adjudicated (spam analytics, graylist, or mis-set conditional forwarding) and dropped to voicemail or another destination before the handset is invited to ring.</li>
+        <li><strong>Dead routing:</strong> An old conditional route (e.g., CFNA/CFB) points to a retired number or mailbox. Call goes into a black hole; you get no log.</li>
+      </ol>
+      <p>There’s also the <em>labeling/analytics</em> angle (STIR/SHAKEN, CNAM reputation, third-party scoring). If your number gets a bad reputation, some networks apply harsher call treatment. We submitted to industry registries and cleaned up any possible flags, but the ultimate fix came from forcing a clean, correct <strong>re-provision</strong> of the line.</p>
+
+      <h2>Timeline (Condensed)</h2>
+      <ul class="list-compact">
+        <li><strong>2020–2024:</strong> Notice fewer inbound calls. Customers later report “straight to voicemail.” Multiple support contacts over the years did not produce a lasting fix.</li>
+        <li><strong>2023:</strong> Separate headache: we lost control of our original domain (<em>caldwellsroofing.com</em>) after a third party acquired it via a registrar marketplace. We rebuilt the site at <em>caldwells-roofing.com</em>.</li>
+        <li><strong>Summer 2025:</strong> Ported the business line to Verizon and escalated until the number was fully and correctly provisioned post-port. Calls began ringing normally again. We also enrolled with the major caller registries for reputation hygiene.</li>
+      </ul>
+
+      <h2>Other Body Blows We Survived</h2>
+      <ul class="list-compact">
+        <li><strong>Domain loss (2023):</strong> In the middle of running jobs, I genuinely believed our long-held domain <code>caldwellsroofing.com</code> still had years left. I did not receive a renewal call from GoDaddy. When I checked, it was already gone and had been registered by someone else. Losing it wiped out years of SEO and links; we rebuilt at <a href="https://caldwells-roofing.com/">caldwells-roofing.com</a>.</li>
+        <li><strong>Change-order retaliation (2020):</strong> We issued a legitimate, documented change order and were punished to a scary degree for it—proof that subs are most exposed during change orders, which are infrequent but sometimes necessary.</li>
+      </ul>
+
+      <h2>Business Impact</h2>
+      <p>With phones effectively “ghosting” many callers, new-lead volume and revenue cratered—roughly to a third of pre-2020 levels. Once calls began ringing normally in 2025, inbound interest rebounded immediately.</p>
+
+      <h2>Quick Self-Audit for Any Small Business</h2>
+      <div class="box">
+        <ol class="list-compact">
+          <li><strong>Test from outside your network:</strong> Call your main line from at least two different carriers (AT&T/Verizon/T-Mobile). Try during business hours and after hours.</li>
+          <li><strong>Check conditional forwards:</strong> Ask your carrier to verify <code>CFU</code> (unconditional), <code>CFNA</code> (no-answer), and <code>CFB</code> (busy) are set correctly. Remove any legacy destinations.</li>
+          <li><strong>Voicemail path:</strong> Confirm which mailbox the network is actually using and that it’s provisioned to your device/account.</li>
+          <li><strong>Reputation hygiene:</strong> Register at the major caller registries (Free Caller Registry) and ensure your CNAM/name is accurate.</li>
+          <li><strong>Escalate provisioning:</strong> If symptoms persist, request a <em>full reprovision</em> of your line or a “reset push” after any port or feature change.</li>
+          <li><strong>Add a backstop:</strong> Put a secondary number (and a text button) on your site while troubleshooting. Most callers won’t try twice.</li>
+        </ol>
+      </div>
+
+      <h2>If You’re Reading This Because Your Phone Is Quiet…</h2>
+      <p>Don’t wait. A quiet line might be a market lull—or it might be a silent technical failure. Verify the call path, fix the routing, and keep an alternate contact method visible. It’s the difference between a thriving calendar and empty weeks.</p>
+
+      <div class="note">
+        <strong>Need a roof, not a telecom lecture?</strong> Fair! We’re back to full strength. Call or text <a href="tel:13343327799">334-332-7799</a> or <a href="/roof-inspection-auburn-opelika/">book an inspection</a>. Hail inspections are free.
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+  <script>
+    fetch("/footer.html")
+      .then(r=>r.text())
+      .then(html=>{ document.getElementById("footer").innerHTML = html; })
+      .catch(err => console.error("Footer load error:", err));
+  </script>
+
+  <!-- Structured data (helps SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BlogPosting",
+    "headline":"Calls Going Straight to Voicemail? Our 5-Year Telecom Case Study",
+    "alternativeHeadline":"How a hidden routing/provisioning issue ghosted our business line until summer 2025",
+    "datePublished":"2025-09-02T12:00:00+00:00",
+    "dateModified":"2025-09-02T12:00:00+00:00",
+    "inLanguage":"en-US",
+    "author":{"@type":"Organization","name":"Caldwell's Roofing Auburn and Opelika"},
+    "publisher":{
+      "@type":"Organization",
+      "name":"Caldwell's Roofing Auburn and Opelika",
+      "logo":{"@type":"ImageObject","url":"https://caldwells-roofing.com/favicon-32x32.png","width":32,"height":32}
+    },
+    "mainEntityOfPage":"https://caldwells-roofing.com/news/ghosted-calls-case-study/",
+    "url":"https://caldwells-roofing.com/news/ghosted-calls-case-study/",
+    "description":"For five years our business number ghosted customers—calls went straight to voicemail or vanished. Here’s the nerdy post-mortem, how we fixed it in 2025, and how you can self-audit.",
+    "about":[{"@type":"Thing","name":"telecom troubleshooting"},{"@type":"Thing","name":"missed calls"}],
+    "articleSection":"Company News"
+  }
+  </script>
+</body>
+</html>
